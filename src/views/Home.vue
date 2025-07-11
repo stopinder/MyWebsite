@@ -1,5 +1,7 @@
 <template>
-  <div class="font-sans bg-midnight text-white min-h-screen">
+
+    <div class="font-inter bg-midnight text-white min-h-screen">
+
     <!-- Header -->
     <header class="px-6 py-4 flex justify-between items-center bg-slate-900 shadow-md">
       <h1 class="text-xl font-semibold">Rob Ormiston</h1>
@@ -64,15 +66,24 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-20 px-6 bg-slate-900 text-slate-100 text-center">
-      <h3 class="text-2xl font-bold mb-4">Contact</h3>
-      <p class="mb-6">Get in touch to book a free 20-minute call or learn more about Heliosynthesis.</p>
-      <a href="mailto:your@email.com" class="inline-block bg-white text-midnight px-6 py-2 rounded-full font-semibold hover:bg-slate-200 transition">
-        Send an Email
-      </a>
-    </section>
+      <section id="contact" class="py-20 px-6 bg-slate-900 text-slate-100 text-center">
+        <h3 class="text-2xl font-bold mb-4">Book a Session</h3>
+        <p class="mb-6">Choose a time that works for you — no email required.</p>
 
-    <!-- Footer -->
+        <div class="max-w-3xl mx-auto">
+          <iframe
+              src="https://calendly.com/robormiston/introduction"
+              width="100%"
+              height="600"
+              frameborder="0"
+              class="rounded-xl border border-slate-700 shadow-sm"
+              title="Calendly Scheduling"
+          ></iframe>
+        </div>
+      </section>
+
+
+      <!-- Footer -->
     <footer class="py-6 text-center text-sm text-slate-600">
       &copy; 2025 Rob Ormiston. All rights reserved.
     </footer>

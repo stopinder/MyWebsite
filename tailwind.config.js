@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
       colors: {
         midnight: '#0f172a',
         celestial: '#1e293b',
@@ -15,4 +18,3 @@ module.exports = {
   },
   plugins: [],
 };
-
