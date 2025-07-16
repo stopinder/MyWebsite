@@ -1,75 +1,103 @@
 <template>
+  <div class="relative font-inter bg-midnight text-white min-h-screen overflow-x-hidden">
+    <!-- Subtle Background Texture -->
+    <div
+        class="absolute inset-0 bg-[url('/images/bg-texture.jpg')] bg-cover bg-center opacity-5 pointer-events-none z-0"
+    ></div>
 
-    <div class="font-inter bg-midnight text-white min-h-screen">
+    <!-- Main Layout -->
+    <div class="relative z-10">
+      <!-- Header -->
+      <header class="px-6 py-4 flex justify-between items-center bg-slate-900 shadow-md">
+        <h1 class="text-xl font-semibold">Rob Ormiston</h1>
+        <nav class="space-x-4 text-sm hidden md:block">
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#contact" class="hover:underline">Book</a>
+        </nav>
+      </header>
 
-    <!-- Header -->
-    <header class="px-6 py-4 flex justify-between items-center bg-slate-900 shadow-md">
-      <h1 class="text-xl font-semibold">Rob Ormiston</h1>
-      <nav class="space-x-4 text-sm hidden md:block">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#philosophy" class="hover:underline">Philosophy</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </header>
+      <!-- Hero -->
+      <section class="pt-32 pb-24 px-6 text-center max-w-2xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
+          Depth-Oriented Psychotherapy
+        </h2>
+        <p class="text-lg text-faded mb-8 leading-relaxed">
+          Trauma-informed. Symbolic. Clinical. For over 25 years, I’ve worked with memory, meaning, and emotional healing using IFS and EMDR.
+        </p>
+        <a
+            href="#contact"
+            class="inline-block bg-white text-midnight px-6 py-3 rounded-full font-semibold hover:bg-slate-200 transition"
+        >
+          Book a Call
+        </a>
+      </section>
 
-    <!-- Hero -->
-    <section class="pt-32 pb-24 px-6 text-center bg-gradient-to-b from-midnight to-celestial">
-      <h2 class="text-3xl md:text-5xl font-bold mb-4">IFS & EMDR Psychotherapy</h2>
-      <p class="text-lg text-faded max-w-xl mx-auto mb-6">
-        Clinical depth. Symbolic intelligence. Creator of Heliosynthesis.
-      </p>
-      <a href="#contact" class="inline-block bg-white text-midnight px-6 py-2 rounded-full font-semibold hover:bg-slate-200 transition">
-        Book a Free Call
-      </a>
-    </section>
+      <!-- Divider -->
+      <SectionDivider />
 
-    <!-- About -->
-    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
-      <h3 class="text-2xl font-bold mb-4">About Me</h3>
-      <p class="mb-4">
-        I’m a psychotherapist with 25+ years in mental health, including clinical leadership in the NHS. I specialise in Internal Family Systems (IFS) and EMDR, working deeply with trauma, memory, and meaning.
-      </p>
-      <p>
-        I’m also the creator of Heliosynthesis—a reflective tool for therapists and clients, blending symbolic systems with modern tech.
-      </p>
-    </section>
+      <<!-- About -->
+      <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+          <!-- Text Block -->
+          <div class="md:w-2/3 text-center md:text-left">
+            <h3 class="text-2xl font-bold mb-4">About Me</h3>
+            <p class="mb-4">
+              I’m a psychotherapist with over 25 years in mental health, including clinical leadership roles within the NHS.
+              I work at depth with trauma, memory, and meaning — primarily through Internal Family Systems (IFS) and EMDR.
+            </p>
+            <p>
+              My approach is reflective, symbolic, and rooted in real experience — offering clients clarity, containment, and connection.
+            </p>
+          </div>
 
-    <!-- Services -->
-    <section id="services" class="py-20 px-6 bg-slate-800 text-slate-100">
-      <h3 class="text-2xl font-bold mb-6 text-center">Services</h3>
-      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <div class="p-4 border border-slate-600 rounded-xl bg-slate-900">
-          <h4 class="font-semibold mb-2">IFS Therapy</h4>
-          <p class="text-sm">Parts work for emotional clarity and inner connection.</p>
+          <!-- Image Block -->
+          <div class="md:w-1/3">
+            <img
+                src="/images/rob-placeholder.jpg"
+                alt="Rob Ormiston portrait"
+                class="w-32 h-32 rounded-full mx-auto md:mx-0 shadow-sm border border-slate-700"
+            />
+          </div>
         </div>
-        <div class="p-4 border border-slate-600 rounded-xl bg-slate-900">
-          <h4 class="font-semibold mb-2">EMDR Processing</h4>
-          <p class="text-sm">Trauma healing through structured memory integration.</p>
-        </div>
-        <div class="p-4 border border-slate-600 rounded-xl bg-slate-900">
-          <h4 class="font-semibold mb-2">Reflective Supervision</h4>
-          <p class="text-sm">Depth-focused support for therapists and clinicians.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Philosophy -->
-    <section id="philosophy" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
-      <h3 class="text-2xl font-bold mb-4">Philosophy</h3>
-      <p class="mb-4 italic text-slate-400">
-        “Everything is in there. The mind is symbolic, layered, and ready to speak if we listen the right way.”
-      </p>
-      <p>
-        I work at the intersection of system, soul, and signal. I believe real change happens when insight meets embodiment—and when parts are met with presence, not pressure.
-      </p>
-    </section>
 
-    <!-- Contact -->
+      <!-- Divider -->
+      <SectionDivider />
+
+      <!-- Services -->
+      <section id="services" class="py-20 px-6 bg-slate-800 text-slate-100 text-center">
+        <h3 class="text-2xl font-bold mb-6">What I Offer</h3>
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div class="p-6 border border-slate-600 rounded-xl bg-slate-900">
+            <h4 class="font-semibold mb-2 text-lg">IFS Therapy</h4>
+            <p class="text-sm leading-relaxed">
+              Parts work for emotional clarity, inner alignment, and compassionate self-leadership.
+            </p>
+          </div>
+          <div class="p-6 border border-slate-600 rounded-xl bg-slate-900">
+            <h4 class="font-semibold mb-2 text-lg">EMDR Processing</h4>
+            <p class="text-sm leading-relaxed">
+              Structured trauma resolution through memory reconsolidation and integration.
+            </p>
+          </div>
+          <div class="p-6 border border-slate-600 rounded-xl bg-slate-900">
+            <h4 class="font-semibold mb-2 text-lg">Reflective Supervision</h4>
+            <p class="text-sm leading-relaxed">
+              Depth-oriented clinical supervision for therapists working symbolically or with complex trauma.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <SectionDivider />
+
+      <!-- Contact / Booking -->
       <section id="contact" class="py-20 px-6 bg-slate-900 text-slate-100 text-center">
         <h3 class="text-2xl font-bold mb-4">Book a Session</h3>
-        <p class="mb-6">Choose a time that works for you — no email required.</p>
-
+        <p class="mb-6 text-faded">Choose a time that works for you. All sessions are online.</p>
         <div class="max-w-3xl mx-auto">
           <iframe
               src="https://calendly.com/robormiston/introduction"
@@ -77,19 +105,27 @@
               height="600"
               frameborder="0"
               class="rounded-xl border border-slate-700 shadow-sm"
-              title="Calendly Scheduling"
+              title="Calendly Booking"
           ></iframe>
         </div>
       </section>
 
-
       <!-- Footer -->
-    <footer class="py-6 text-center text-sm text-slate-600">
-      &copy; 2025 Rob Ormiston. All rights reserved.
-    </footer>
+      <footer class="py-6 text-center text-sm text-slate-600 bg-midnight space-y-2">
+        <div>
+          <a href="mailto:rob@heliosynthesis.org" class="hover:underline">rob@heliosynthesis.org</a>
+        </div>
+        <div class="space-x-4">
+          <a href="https://linkedin.com/in/robormiston" target="_blank" class="hover:underline">LinkedIn</a>
+          <a href="https://instagram.com/yourhandle" target="_blank" class="hover:underline">Instagram</a>
+        </div>
+        <div>&copy; 2025 Rob Ormiston. All rights reserved.</div>
+      </footer>
+    </div>
   </div>
 </template>
 
 <script setup>
-// no logic yet
+import SectionDivider from '../components/SectionDivider.vue'
 </script>
+
