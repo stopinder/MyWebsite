@@ -1,8 +1,12 @@
 <template>
   <div class="relative font-inter bg-midnight text-white min-h-screen overflow-x-hidden">
-    <!-- Subtle Background Texture -->
+    <!-- Background Texture -->
     <div
         class="absolute inset-0 bg-[url('/images/bg-texture.jpg')] bg-cover bg-center opacity-5 pointer-events-none z-0"
+    ></div>
+    <!-- Radial Overlay -->
+    <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/10 to-midnight pointer-events-none z-0"
     ></div>
 
     <!-- Main Layout -->
@@ -18,7 +22,7 @@
       </header>
 
       <!-- Hero -->
-      <section class="pt-20 pb-8 px-6 text-center max-w-2xl mx-auto">
+      <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
           Depth-Oriented Psychotherapy
         </h2>
@@ -27,17 +31,17 @@
         </p>
         <a
             href="#contact"
-            class="inline-block bg-white text-midnight px-6 py-3 rounded-full font-semibold transition hover:bg-slate-200 hover:ring-2 hover:ring-[#9373B5] hover:ring-offset-2"
+            class="inline-block bg-white text-midnight px-6 py-3 rounded-full font-semibold hover:bg-slate-200 transition"
         >
           Book a Call
         </a>
       </section>
 
-      <!-- Divider -->
-      <MandorlaDivider />
+      <!-- Symbolic Accent -->
+      <MandorlaDivider class="text-purple-400 opacity-60 my-8" />
 
       <!-- About -->
-      <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-slate-200">
+      <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
         <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
           <!-- Text Block -->
           <div class="md:w-2/3 text-center md:text-left">
@@ -51,22 +55,22 @@
             </p>
           </div>
 
-          <!-- Image Block -->
-          <div class="md:w-1/3">
+          <!-- Image -->
+          <div class="md:w-1/3 mt-4">
             <img
                 src="/images/rob-placeholder.jpg"
                 alt="Rob Ormiston portrait"
-                class="w-32 h-32 rounded-full mx-auto md:mx-0 shadow-sm border border-slate-700 object-cover"
+                class="w-40 h-40 rounded-full mx-auto md:mx-0 shadow-sm border border-slate-700 object-cover"
             />
           </div>
         </div>
       </section>
 
-      <!-- Divider -->
-      <MandorlaDivider />
+      <!-- Symbolic Accent -->
+      <MandorlaDivider class="text-purple-400 opacity-60 my-8" />
 
       <!-- Services -->
-      <section id="services" class="py-16 px-6 bg-slate-800 text-slate-100 text-center">
+      <section id="services" class="py-20 px-6 bg-slate-800 text-slate-100 text-center">
         <h3 class="text-2xl font-bold mb-6">What I Offer</h3>
         <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div class="p-6 border border-slate-600 rounded-xl bg-slate-900">
@@ -90,18 +94,19 @@
         </div>
       </section>
 
-      <!-- Divider -->
-      <MandorlaDivider />
+      <!-- Symbolic Accent -->
+      <MandorlaDivider class="text-purple-400 opacity-60 my-8" />
 
       <!-- Contact -->
-      <section id="contact" class="py-16 px-6 bg-slate-900 text-slate-100 text-center">
-        <h3 class="text-2xl font-bold mb-4">Book a Session</h3>
-        <p class="mb-6 text-faded">Choose a time that works for you. All sessions are online.</p>
-        <div class="max-w-3xl mx-auto">
+      <section id="contact" class="py-20 px-6 bg-slate-900 text-slate-100 text-center">
+        <h3 class="text-xl font-semibold mb-2">Book a Session</h3>
+        <p class="text-sm text-slate-400 mb-4">Choose a time that suits you — all sessions are online.</p>
+
+        <div class="max-w-xl mx-auto">
           <iframe
               src="https://calendly.com/robormiston/introduction"
               width="100%"
-              height="600"
+              height="350"
               frameborder="0"
               class="rounded-xl border border-slate-700 shadow-sm"
               title="Calendly Booking"
@@ -127,6 +132,3 @@
 <script setup>
 import MandorlaDivider from '../components/MandorlaDivider.vue'
 </script>
-
-
-
