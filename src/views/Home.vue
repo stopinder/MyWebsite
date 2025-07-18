@@ -18,7 +18,7 @@
       </header>
 
       <!-- Hero -->
-      <section class="pt-32 pb-24 px-6 text-center max-w-2xl mx-auto">
+      <section class="pt-20 pb-8 px-6 text-center max-w-2xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
           Depth-Oriented Psychotherapy
         </h2>
@@ -27,17 +27,17 @@
         </p>
         <a
             href="#contact"
-            class="inline-block bg-white text-midnight px-6 py-3 rounded-full font-semibold hover:bg-slate-200 transition"
+            class="inline-block bg-white text-midnight px-6 py-3 rounded-full font-semibold transition hover:bg-slate-200 hover:ring-2 hover:ring-[#9373B5] hover:ring-offset-2"
         >
           Book a Call
         </a>
       </section>
 
       <!-- Divider -->
-      <SectionDivider />
+      <MandorlaDivider />
 
-      <<!-- About -->
-      <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
+      <!-- About -->
+      <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-slate-200">
         <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
           <!-- Text Block -->
           <div class="md:w-2/3 text-center md:text-left">
@@ -56,18 +56,17 @@
             <img
                 src="/images/rob-placeholder.jpg"
                 alt="Rob Ormiston portrait"
-                class="w-32 h-32 rounded-full mx-auto md:mx-0 shadow-sm border border-slate-700"
+                class="w-32 h-32 rounded-full mx-auto md:mx-0 shadow-sm border border-slate-700 object-cover"
             />
           </div>
         </div>
       </section>
 
-
       <!-- Divider -->
-      <SectionDivider />
+      <MandorlaDivider />
 
       <!-- Services -->
-      <section id="services" class="py-20 px-6 bg-slate-800 text-slate-100 text-center">
+      <section id="services" class="py-16 px-6 bg-slate-800 text-slate-100 text-center">
         <h3 class="text-2xl font-bold mb-6">What I Offer</h3>
         <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div class="p-6 border border-slate-600 rounded-xl bg-slate-900">
@@ -92,10 +91,10 @@
       </section>
 
       <!-- Divider -->
-      <SectionDivider />
+      <MandorlaDivider />
 
-      <!-- Contact / Booking -->
-      <section id="contact" class="py-20 px-6 bg-slate-900 text-slate-100 text-center">
+      <!-- Contact -->
+      <section id="contact" class="py-16 px-6 bg-slate-900 text-slate-100 text-center">
         <h3 class="text-2xl font-bold mb-4">Book a Session</h3>
         <p class="mb-6 text-faded">Choose a time that works for you. All sessions are online.</p>
         <div class="max-w-3xl mx-auto">
@@ -126,6 +125,8 @@
 </template>
 
 <script setup>
-import SectionDivider from '../components/SectionDivider.vue'
+import MandorlaDivider from '../components/MandorlaDivider.vue'
 </script>
+
+
 
