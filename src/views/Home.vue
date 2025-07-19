@@ -30,10 +30,10 @@
           Trauma-informed. Symbolic. Clinical. For over 25 years, I’ve worked with memory, meaning, and emotional healing using IFS and EMDR.
         </p>
         <a
-            href="#contact"
+            href="mailto:discover@heliosynthesis.org?subject=Therapy%20Enquiry&body=Hi%20Rob%2C%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20psychotherapy%20services.%20Please%20let%20me%20know%20next%20steps.%0A%0AThanks%2C"
             class="inline-block bg-white text-midnight px-6 py-3 rounded-full font-semibold hover:bg-slate-200 transition"
         >
-          Book a Call
+          Get in Touch
         </a>
       </section>
 
@@ -117,14 +117,15 @@
       <!-- Footer -->
       <footer class="py-6 text-center text-sm text-slate-600 bg-midnight space-y-2">
         <div>
-          <a href="mailto:rob@heliosynthesis.org" class="hover:underline">rob@heliosynthesis.org</a>
+          <a href="mailto:discover@heliosynthesis.org" class="hover:underline">rob@heliosynthesis.org</a>
         </div>
         <div class="space-x-4">
-          <a href="https://linkedin.com/in/robormiston" target="_blank" class="hover:underline">LinkedIn</a>
-          <a href="https://instagram.com/yourhandle" target="_blank" class="hover:underline">Instagram</a>
+          <a href="https://www.linkedin.com/in/chrysalistherapyservices" target="_blank" class="hover:underline">LinkedIn</a>
+          <a href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info" target="_blank" class="hover:underline">Facebook</a>
         </div>
         <div>&copy; 2025 Rob Ormiston. All rights reserved.</div>
       </footer>
+
     </div>
   </div>
 </template>
