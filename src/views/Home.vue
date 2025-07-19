@@ -1,6 +1,7 @@
 <template>
-  <div class="relative font-inter bg-midnight text-white min-h-screen overflow-x-hidden">
-    <!-- Background Texture -->
+  <div class="relative font-inter bg-midnight text-white min-h-screen">
+
+  <!-- Background Texture -->
     <div
         class="absolute inset-0 bg-[url('/images/bg-texture.jpg')] bg-cover bg-center opacity-5 pointer-events-none z-0"
     ></div>
@@ -12,8 +13,9 @@
     <!-- Main Layout -->
     <div class="relative z-10">
       <!-- Header -->
-      <header class="px-6 py-4 flex justify-between items-center bg-slate-900 shadow-md">
-        <h1 class="text-xl font-semibold">Rob Ormiston</h1>
+      <header class="sticky top-0 z-50 px-6 py-4 flex justify-between items-center bg-slate-900 shadow-md">
+
+      <h1 class="text-xl font-semibold">Rob Ormiston</h1>
         <nav class="space-x-4 text-sm hidden md:block">
           <a href="#about" class="hover:underline">About</a>
           <a href="#services" class="hover:underline">Services</a>
