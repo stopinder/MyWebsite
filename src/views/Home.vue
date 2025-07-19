@@ -12,16 +12,35 @@
 
     <!-- Main Layout -->
     <div class="relative z-10">
-      <!-- Header -->
       <header class="sticky top-0 z-50 px-6 py-4 flex justify-between items-center bg-slate-900 shadow-md">
+        <h1 class="text-xl font-semibold">Rob Ormiston</h1>
 
-      <h1 class="text-xl font-semibold">Rob Ormiston</h1>
-        <nav class="space-x-4 text-sm hidden md:block">
-          <a href="#about" class="hover:underline">About</a>
-          <a href="#services" class="hover:underline">Services</a>
-          <a href="#contact" class="hover:underline">Book</a>
+        <!-- Hamburger Button (Mobile only) -->
+        <button
+            @click="isMenuOpen = !isMenuOpen"
+            class="md:hidden text-white focus:outline-none"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+
+        <!-- Navigation -->
+        <nav
+            :class="[
+      'absolute top-full left-0 w-full bg-slate-900 md:bg-transparent md:static md:flex md:items-center md:space-x-4 text-sm',
+      isMenuOpen ? 'block' : 'hidden',
+    ]"
+            class="px-6 py-4 md:px-0 md:py-0"
+        >
+          <a href="#about" class="block md:inline hover:underline py-2">About</a>
+          <a href="#services" class="block md:inline hover:underline py-2">Services</a>
+          <a href="#contact" class="block md:inline hover:underline py-2">Book</a>
+          <a href="https://heliosynthesis.org" target="_blank" class="block md:inline hover:underline py-2">Heliosynthesis</a>
         </nav>
       </header>
+
 
       <!-- Hero -->
       <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto">
@@ -133,5 +152,8 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+const isMenuOpen = ref(false)
+
 import MandorlaDivider from '../components/MandorlaDivider.vue'
 </script>
