@@ -26,7 +26,7 @@
           <a href="#services" class="block md:inline hover:underline py-2">Services</a>
           <a href="#enneagram" class="block md:inline hover:underline py-2">Enneagram</a>
           <a href="#contact" class="block md:inline hover:underline py-2">Book</a>
-          <a href="https://heliosynthesis.org" target="_blank" class="block md:inline hover:underline py-2">Heliosynthesis</a>
+
           <a href="https://heliosynthesis.org"
               target="_blank"
               class="block md:inline hover:underline py-2"
