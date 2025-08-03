@@ -61,7 +61,7 @@
           <div class="md:w-2/3 text-center md:text-left">
             <h3 class="text-2xl font-display font-semibold mb-4">About Me</h3>
             <p class="mb-4">
-              I’m a psychotherapist with over 25 years in mental health, including clinical leadership roles within the NHS.
+              I’m a psychotherapist with over 25 years experience of working in mental health environments, including clinical leadership roles within the NHS.
               I work at depth with trauma, memory, and meaning — primarily through Internal Family Systems (IFS) and EMDR.
             </p>
             <p>
@@ -176,7 +176,7 @@
 
       <!-- Footer -->
       <footer class="py-6 text-center text-sm text-slate-600 bg-midnight space-y-2">
-        <div><a href="mailto:discover@heliosynthesis.org" class="hover:underline">rob@heliosynthesis.org</a></div>
+        <div><a href="mailto:discover@heliosynthesis.org" class="hover:underline">discover@heliosynthesis.org</a></div>
         <div class="space-x-4">
           <a href="https://www.linkedin.com/in/chrysalistherapyservices" target="_blank" class="hover:underline">LinkedIn</a>
           <a href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info" target="_blank" class="hover:underline">Facebook</a>
