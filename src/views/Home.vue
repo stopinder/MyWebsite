@@ -7,35 +7,51 @@
 
     <!-- Main Layout -->
     <div class="relative z-10">
-      <header class="sticky top-0 z-50 px-6 py-4 flex justify-between items-center bg-midnight bg-opacity-90 shadow-md">
-        <router-link to="/" class="text-xl font-display font-semibold">Rob Ormiston</router-link>
-        <button @click="isMenuOpen = !isMenuOpen" class="md:hidden text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-        <nav
-            :class="[
-            'absolute top-full left-0 w-full bg-midnight md:bg-transparent md:static md:flex md:items-center md:space-x-4 text-sm',
-            isMenuOpen ? 'block' : 'hidden'
-          ]"
-            class="px-6 py-4 md:px-0 md:py-0"
-        >
-          <a href="#about" class="block md:inline hover:underline py-2">About</a>
-          <a href="#services" class="block md:inline hover:underline py-2">Services</a>
-          <a href="#enneagram" class="block md:inline hover:underline py-2">Enneagram</a>
-          <a href="#contact" class="block md:inline hover:underline py-2">Book</a>
+      <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
+        <!-- Left: Logo + Name -->
+        <div class="flex items-center space-x-3">
+          <router-link
+              to="/"
+              class="flex items-center space-x-3 flex-shrink-0"
+          >
+            <img
+                src="/images/favmine.png"
+                alt="Rob Ormiston logo"
+                class="w-8 h-8 rounded-full shadow-md border border-slate-700 object-cover"
+            />
+            <transition name="fade-up" appear>
+              <span v-if="showName" class="text-xl font-display font-semibold whitespace-nowrap">Rob Ormiston</span>
+            </transition>
+          </router-link>
+        </div>
 
-          <a href="https://heliosynthesis.org"
+        <!-- Center: Menu -->
+        <nav class="hidden md:flex justify-center space-x-4 text-sm">
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#enneagram" class="hover:underline">Enneagram</a>
+          <a href="#contact" class="hover:underline">Book</a>
+          <a
+              href="https://heliosynthesis.org"
               target="_blank"
-              class="block md:inline hover:underline py-2"
+              class="hover:underline whitespace-nowrap min-w-max"
           >
             Symbolic Insight
           </a>
 
         </nav>
+
+        <!-- Right: Mobile Menu Button -->
+        <div class="flex justify-end md:hidden">
+          <button @click="isMenuOpen = !isMenuOpen" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
       </header>
+
 
       <!-- Hero -->
       <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto">
@@ -188,8 +204,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+
+const showName = ref(false)
 const isMenuOpen = ref(false)
+
+onMounted(() => {
+  setTimeout(() => {
+    showName.value = true
+  }, 300)
+})
 
 import MandorlaDivider from '../components/MandorlaDivider.vue'
 </script>
+
