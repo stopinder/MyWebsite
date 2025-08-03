@@ -7,9 +7,10 @@
 
     <!-- Main Layout -->
     <div class="relative z-10">
-      <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
-        <!-- Left: Logo + Name -->
-        <div class="flex items-center space-x-3">
+      <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-2 items-center bg-midnight bg-opacity-90 shadow-md">
+
+      <!-- Left: Logo + Name + Chrysalis -->
+        <div class="flex items-start flex-col">
           <router-link to="/" class="flex items-center space-x-3 flex-shrink-0">
             <img
                 src="/images/favmine.png"
@@ -20,7 +21,13 @@
               <span v-if="showName" class="text-xl font-display font-semibold whitespace-nowrap">Rob Ormiston</span>
             </transition>
           </router-link>
+
+          <div class="mt-1 ml-11 text-sm text-slate-400 font-medium leading-snug">
+            <a href="/chrysalis" class="hover:underline">Chrysalis Therapy Services</a>
+          </div>
         </div>
+      </header>
+
 
         <!-- Center: Navigation -->
         <nav class="hidden md:flex justify-center space-x-4 text-sm">
@@ -31,11 +38,7 @@
           <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap">Symbolic Insight</a>
         </nav>
 
-        <!-- Right: Chrysalis Text -->
-        <div class="hidden md:block text-right text-sm text-slate-400 font-medium">
-          Chrysalis Therapy Services
-        </div>
-      </header>
+
 
 
       <!-- Hero -->
