@@ -42,7 +42,7 @@
       <!-- Hero -->
       <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto">
         <h2 class="text-5xl font-display font-semibold mb-6 tracking-tight leading-tight">
-          Depth-Oriented Psychotherapy
+         Psychotherapy & Counselling
         </h2>
         <p class="text-lg text-slate-300 mb-8 leading-relaxed">
           Trauma-informed. Symbolic. Clinical. For over 25 years, I’ve worked with memory, meaning, and emotional healing using IFS and EMDR.
@@ -63,7 +63,7 @@
           <div class="md:w-2/3 text-center md:text-left">
             <h3 class="text-2xl font-display font-semibold mb-4">About Me</h3>
             <p class="mb-4">
-              I’m a psychotherapist and the founder of Heliosynthesis with well over 25 years experience of working in mental health environments, including clinical leadership roles within the NHS.
+              I’m a psychotherapist and the founder of Heliosynthesis. With well over 25 years experience of working in mental health environments, including clinical leadership roles within the NHS.
               I work at depth with trauma, memory, and meaning — primarily through Internal Family Systems (IFS) and EMDR.
             </p>
             <p>
