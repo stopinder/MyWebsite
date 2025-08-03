@@ -77,6 +77,46 @@
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
+      <section class="py-20 px-6 max-w-6xl mx-auto text-slate-200">
+        <p class="text-center text-sm uppercase tracking-wide text-slate-400 mb-2">Words from clients</p>
+        <h3 class="text-2xl font-display font-semibold mb-6 text-center">Client Reflections</h3>
+
+        <div class="grid md:grid-cols-3 gap-6 text-slate-300">
+          <blockquote class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
+            </svg>
+            “Rob helped me reconnect with parts of myself I’d long forgotten. The work was profound.”
+            <footer class="mt-3 text-sm text-slate-400">— S.R., 2024</footer>
+          </blockquote>
+
+          <blockquote class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
+            </svg>
+            “I’ve tried many approaches to healing. Rob’s symbolic and clear method changed everything.”
+            <footer class="mt-3 text-sm text-slate-400">— A.M., 2023</footer>
+          </blockquote>
+
+          <blockquote class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
+            </svg>
+            “Working with Rob felt like walking into a sacred space. I left each session more whole.”
+            <footer class="mt-3 text-sm text-slate-400">— J.L., 2022</footer>
+          </blockquote>
+        </div>
+
+        <p class="text-center text-slate-400 mt-10">
+          Curious to explore this work yourself?
+          <a href="#contact" class="text-periwinkle hover:underline">Book a session →</a>
+        </p>
+      </section>
+
+      <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
+
+
+
       <!-- Services -->
       <section id="services" class="py-20 px-6 bg-celestial text-slate-100 text-center">
         <h3 class="text-2xl font-display font-semibold mb-6">Therapeutic Modalities</h3>
