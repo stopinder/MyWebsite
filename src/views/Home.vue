@@ -177,6 +177,17 @@
       </section>
 
       <!-- Footer -->
+      <div class="flex justify-center items-center mt-4 space-x-2">
+        <span class="text-slate-500">Registered Member of</span>
+        <a href="https://www.bacp.co.uk/" target="_blank" rel="noopener" class="inline-block">
+          <img
+              src="/images/BACP.png"
+              alt="BACP Logo"
+              class="h-6 md:h-8 object-contain"
+          />
+        </a>
+      </div>
+
       <footer class="py-6 text-center text-sm text-slate-600 bg-midnight space-y-2">
         <div><a href="mailto:discover@heliosynthesis.org" class="hover:underline">discover@heliosynthesis.org</a></div>
         <div class="space-x-4">
