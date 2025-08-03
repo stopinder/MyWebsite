@@ -38,14 +38,13 @@
       </header>
 
 
-
       <!-- Hero -->
-      <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto">
-        <h2 class="text-5xl font-display font-semibold mb-6 tracking-tight leading-tight">
-         Psychotherapy & Counselling
-        </h2>
-        <p class="text-lg text-slate-300 mb-8 leading-relaxed">
-          Trauma-informed. Symbolic. Clinical. For over 25 years, I’ve worked with memory, meaning, and emotional healing using IFS and EMDR.
+      <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
+        <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight text-white">
+          Trauma-Informed Psychotherapy & Counselling
+        </h1>
+        <p class="text-lg text-faded mb-8 leading-relaxed font-inter">
+          With over 25 years of clinical experience, I offer trauma-informed psychotherapy and counselling using Internal Family Systems (IFS) and Eye Movement Desensitization and Reprocessing (EMDR). My practice supports emotional healing, memory integration, and meaning-making—tailored to individuals seeking compassionate, evidence-based care.
         </p>
         <a
             href="mailto:discover@heliosynthesis.org?subject=Therapy%20Enquiry"
@@ -54,6 +53,9 @@
           Get in Touch
         </a>
       </section>
+
+
+
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
