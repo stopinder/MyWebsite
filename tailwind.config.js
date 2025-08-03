@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-        cormorant: ['Cormorant Garamond', 'serif'], // Added for expressive headings
+        cormorant: ['Cormorant Garamond', 'serif'],
+        karla: ['Karla', 'sans-serif'],
       },
       colors: {
         midnight: '#0f172a',

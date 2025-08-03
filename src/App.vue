@@ -1,7 +1,8 @@
 <template>
-  <div class="font-cormorant">
+  <div class="font-karla">
     <Home />
   </div>
+
 </template>
 
 <script setup>
