@@ -1,5 +1,7 @@
 <template>
-  <Home />
+  <div class="font-cormorant">
+    <Home />
+  </div>
 </template>
 
 <script setup>
@@ -20,8 +22,6 @@ onMounted(() => {
   })
 })
 </script>
-
-
 
 
 
