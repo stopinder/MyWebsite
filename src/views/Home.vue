@@ -10,10 +10,7 @@
       <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
         <!-- Left: Logo + Name -->
         <div class="flex items-center space-x-3">
-          <router-link
-              to="/"
-              class="flex items-center space-x-3 flex-shrink-0"
-          >
+          <router-link to="/" class="flex items-center space-x-3 flex-shrink-0">
             <img
                 src="/images/favmine.png"
                 alt="Rob Ormiston logo"
@@ -25,32 +22,21 @@
           </router-link>
         </div>
 
-        <!-- Center: Menu -->
+        <!-- Center: Navigation -->
         <nav class="hidden md:flex justify-center space-x-4 text-sm">
           <a href="#about" class="hover:underline">About</a>
           <a href="#services" class="hover:underline">Services</a>
           <a href="#enneagram" class="hover:underline">Enneagram</a>
           <a href="#contact" class="hover:underline">Book</a>
-          <a
-              href="https://heliosynthesis.org"
-              target="_blank"
-              class="hover:underline whitespace-nowrap min-w-max"
-          >
-            Symbolic Insight
-          </a>
-
+          <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap">Symbolic Insight</a>
         </nav>
 
-        <!-- Right: Mobile Menu Button -->
-        <div class="flex justify-end md:hidden">
-          <button @click="isMenuOpen = !isMenuOpen" class="text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                 viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
+        <!-- Right: Chrysalis Text -->
+        <div class="hidden md:block text-right text-sm text-slate-400 font-medium">
+          Chrysalis Therapy Services
         </div>
       </header>
+
 
 
       <!-- Hero -->
@@ -77,7 +63,7 @@
           <div class="md:w-2/3 text-center md:text-left">
             <h3 class="text-2xl font-display font-semibold mb-4">About Me</h3>
             <p class="mb-4">
-              I’m a psychotherapist with over 25 years experience of working in mental health environments, including clinical leadership roles within the NHS.
+              I’m a psychotherapist and the founder of Heliosynthesis with well over 25 years experience of working in mental health environments, including clinical leadership roles within the NHS.
               I work at depth with trauma, memory, and meaning — primarily through Internal Family Systems (IFS) and EMDR.
             </p>
             <p>
