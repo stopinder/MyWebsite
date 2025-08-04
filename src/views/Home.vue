@@ -7,9 +7,9 @@
 
     <!-- Main Layout -->
     <div class="relative z-10">
-      <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-2 items-center bg-midnight bg-opacity-90 shadow-md">
+      <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
 
-      <!-- Left: Logo + Name + Chrysalis -->
+        <!-- Left: Logo + Name + Chrysalis -->
         <div class="flex items-start flex-col">
           <router-link to="/" class="flex items-center space-x-3 flex-shrink-0">
             <img
@@ -18,25 +18,46 @@
                 class="w-8 h-8 rounded-full shadow-md border border-slate-700 object-cover"
             />
             <transition name="fade-up" appear>
-              <span v-if="showName" class="text-xl font-display font-semibold whitespace-nowrap">Rob Ormiston</span>
+              <span v-if="showName" class="text-xl font-cormorant font-semibold whitespace-nowrap">Rob Ormiston</span>
             </transition>
           </router-link>
-
           <div class="mt-1 ml-11 text-sm text-slate-400 font-medium leading-snug">
             <a href="/chrysalis" class="hover:underline">Chrysalis Therapy Services</a>
           </div>
         </div>
-      </header>
 
+        <!-- Center: Desktop Navigation -->
+        <nav v-if="!isMenuOpen && windowWidth >= 768" class="hidden md:flex justify-center space-x-4 text-sm">
 
-        <!-- Center: Navigation -->
-        <nav class="hidden md:flex justify-center space-x-4 text-sm">
-          <a href="#about" class="hover:underline">About</a>
+        <a href="#about" class="hover:underline">About</a>
           <a href="#services" class="hover:underline">Services</a>
           <a href="#enneagram" class="hover:underline">Enneagram</a>
           <a href="#contact" class="hover:underline">Book</a>
           <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap">Symbolic Insight</a>
         </nav>
+
+        <!-- Right: Hamburger (mobile only) -->
+        <div class="flex justify-end md:hidden">
+          <button @click="isMenuOpen = !isMenuOpen" class="text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+      </header>
+      <!-- Mobile Navigation Dropdown -->
+      <div v-if="isMenuOpen" class="md:hidden px-6 py-4 bg-midnight text-white space-y-2">
+        <a href="#about" class="block hover:underline">About</a>
+        <a href="#services" class="block hover:underline">Services</a>
+        <a href="#enneagram" class="block hover:underline">Enneagram</a>
+        <a href="#contact" class="block hover:underline">Book</a>
+        <a href="https://heliosynthesis.org" target="_blank" class="block hover:underline">Symbolic Insight</a>
+      </div>
+
+
+
+
 
 
 
@@ -215,6 +236,13 @@ onMounted(() => {
   setTimeout(() => {
     showName.value = true
   }, 300)
+})
+const windowWidth = ref(window.innerWidth)
+
+onMounted(() => {
+  window.addEventListener('resize', () => {
+    windowWidth.value = window.innerWidth
+  })
 })
 
 import MandorlaDivider from '../components/MandorlaDivider.vue'
