@@ -51,13 +51,15 @@
       </header>
       <!-- Mobile Navigation Dropdown -->
       <div v-if="isMenuOpen" class="md:hidden px-6 py-4 bg-midnight text-white space-y-2">
-        <a href="#about" class="block hover:underline">About</a>
-        <a href="#services" class="block hover:underline">Services</a>
-        <a href="#enneagram" class="block hover:underline">Enneagram</a>
+        <a href="#about" class="block hover:underline" @click="isMenuOpen = false">About</a>
+        <a href="#services" class="block hover:underline" @click="isMenuOpen = false">Services</a>
+        <a href="#enneagram" class="block hover:underline" @click="isMenuOpen = false">Enneagram</a>
         <a href="#mission" class="block hover:underline" @click="isMenuOpen = false">Mission</a>
-        <a href="#contact" class="block hover:underline">Book</a>
-        <a href="https://heliosynthesis.org" target="_blank" class="block hover:underline">Symbolic Insight</a>
+        <a href="https://calendly.com/robormiston/new-meeting" target="_blank" rel="noopener noreferrer" class="block hover:underline" @click="isMenuOpen = false">Book</a>
+        <a href="https://heliosynthesis.org" target="_blank" class="block hover:underline" @click="isMenuOpen = false">Symbolic Insight</a>
       </div>
+
+
 
       <!-- Hero -->
       <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
