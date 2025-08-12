@@ -67,7 +67,7 @@
           Trauma-Informed Psychotherapy & Counselling
         </h1>
         <p class="text-lg text-faded mb-8 leading-relaxed font-inter">
-         Evidence-based approaches grounded in Internal Family Systems and EMDR. My work provides a structured, compassionate space where complex trauma and memory can be explored safely, fostering healing, resilience, and meaningful personal growth.
+          Creating a safe, clear space where healing from trauma unfolds. Here, complexity is met with patience and precision—helping you build resilience, regain balance, and move forward with confidence.
 
           My approach is reflective and symbolic, grounded in lived experience, providing clients with clarity, containment, and genuine connection.
 
