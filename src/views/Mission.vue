@@ -102,7 +102,7 @@ import { ref } from 'vue'
 const isMenuOpen = ref(false)
 
 function donate() {
-  window.open('https://www.buymeacoffee.com/yourusername', '_blank')
+  window.open('buymeacoffee.com/heliosynth', '_blank')
 }
 </script>
 
