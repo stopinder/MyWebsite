@@ -131,12 +131,15 @@
           </blockquote>
         </div>
 
-        <a
-            href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
-            class="text-periwinkle hover:underline"
-        >
-          Get in Touch →
-        </a>
+        <div class="text-center">
+          <a
+              href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
+              class="text-periwinkle hover:underline"
+          >
+            Get in Touch →
+          </a>
+        </div>
+
 
       </section>
 
@@ -218,7 +221,7 @@
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          Here’s a smoother, integrated version for your site:
+
 
           To help bring this vision to life, we invite your financial support and partnership. Your contribution will directly power the development of this vital resource—supporting therapists and the clients they serve worldwide. When you click “Donate,” you’ll be taken to our Buy Me a Coffee page, where you can read more in depth about what we’re building and how your support makes a difference.
 
