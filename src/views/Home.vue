@@ -22,7 +22,7 @@
             </transition>
           </router-link>
           <div class="ml-11 text-sm text-slate-400 font-medium leading-snug">
-            <a href="/chrysalis" class="hover:underline">Chrysalis Therapy Services</a>
+            Chrysalis Therapy Services
           </div>
 
         </div>
@@ -118,7 +118,7 @@
             <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            “"⭐ ⭐ ⭐ ⭐ ⭐ I’ve tried many approaches to healing. Rob’s symbolic and clear method changed everything.”
+            "⭐ ⭐ ⭐ ⭐ ⭐ I’ve tried many approaches to healing. Rob’s symbolic and clear method changed everything.”
             <footer class="mt-3 text-sm text-slate-400">— A.M., 2023</footer>
           </blockquote>
 
@@ -126,7 +126,7 @@
             <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            “"⭐ ⭐ ⭐ ⭐ ⭐ Rob is the best therapist I have met in 10 years.”
+            "⭐ ⭐ ⭐ ⭐ ⭐ Rob is the best therapist I have met in 10 years.”
             <footer class="mt-3 text-sm text-slate-400">— J.L., 2022</footer>
           </blockquote>
         </div>
@@ -198,7 +198,7 @@
 
 
         <p class="text-lg leading-relaxed text-slate-200">
-          I am building a comprehensive container app tailored for psychotherapists and clinicians. Our mission is to empower psychotherapists and clinicians with an all-in-one, integrated platform that seamlessly combines scheduling, billing, secure client access, and AI-assisted tools. Designed to honor clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
+          We’re building an all-in-one platform designed for psychotherapists and clinicians—bringing together scheduling, billing, secure client access, and AI-powered tools in one seamless, integrated space. Our mission is simple: to make therapists practice easier to manage and help make the work more impactful. Designed to honor clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
           <br /><br />
           The
           <a href="https://heliosynthesis.org" target="_blank" rel="noopener noreferrer" class="underline text-indigo-400 hover:text-indigo-600">
