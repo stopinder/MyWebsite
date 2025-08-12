@@ -70,10 +70,10 @@
           With over 25 years of clinical experience, I offer trauma-informed psychotherapy and counselling using Internal Family Systems (IFS) and Eye Movement Desensitization and Reprocessing (EMDR). My practice supports emotional healing, memory integration, and meaning-making—tailored to individuals seeking compassionate, evidence-based care.
         </p>
         <a
-            href="mailto:discover@heliosynthesis.org?subject=Therapy%20Enquiry"
-            class="inline-block bg-periwinkle hover:bg-indigo-400 text-white px-6 py-3 rounded-full font-semibold shadow-aura transition"
+            href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
+            class="text-periwinkle hover:underline"
         >
-          Get in Touch
+          Get in Touch →
         </a>
       </section>
 
@@ -195,9 +195,7 @@
           Our Mission
         </h1>
 
-        <p class="text-lg leading-relaxed text-slate-200">
-          The fun personality assessment you explored demonstrates how AI can support psychotherapists in navigating complex emotional landscapes. It’s an inviting step toward a broader vision of integrated, insightful care.
-        </p>
+
 
         <p class="text-lg leading-relaxed text-slate-200">
           I am building a comprehensive container app tailored for psychotherapists and clinicians. Our mission is to empower psychotherapists and clinicians with an all-in-one, integrated platform that seamlessly combines scheduling, billing, secure client access, and AI-assisted tools. Designed to honor clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
@@ -233,7 +231,7 @@
           </button>
         </div>
       </section>
-
+      <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Footer -->
       <div class="flex justify-center items-center mt-4 space-x-2">
