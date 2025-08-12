@@ -67,7 +67,11 @@
           Trauma-Informed Psychotherapy & Counselling
         </h1>
         <p class="text-lg text-faded mb-8 leading-relaxed font-inter">
-          With over 25 years of clinical experience, I offer trauma-informed psychotherapy and counselling using Internal Family Systems (IFS) and Eye Movement Desensitization and Reprocessing (EMDR). My practice supports emotional healing, memory integration, and meaning-making—tailored to individuals seeking compassionate, evidence-based care.
+          I’m a psychotherapist and founder of Heliosynthesis, bringing over 25 years of experience in mental health settings, including clinical leadership within the NHS. My work delves deeply into trauma, memory, and meaning, primarily using Internal Family Systems (IFS) and EMDR.
+
+          My approach is reflective and symbolic, grounded in lived experience, providing clients with clarity, containment, and genuine connection.
+
+
         </p>
         <a
             href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
@@ -202,7 +206,7 @@
 
 
         <p class="text-lg leading-relaxed text-slate-200">
-          We’re building an all-in-one platform designed for psychotherapists and clinicians—bringing together scheduling, billing, secure client access, and AI-powered tools in one seamless, integrated space. Our mission is simple: to make therapists practice easier to manage and help make the work more impactful. Designed to honor clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
+          We’re building an all-in-one platform designed for psychotherapists and clinicians—bringing together scheduling, billing, secure client access, and AI-powered tools in one seamless, integrated space. Our mission is simple: to make therapists practice easier to manage and help make the work more impactful. Designed to honour clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
           <br /><br />
           The
           <a href="https://heliosynthesis.org" target="_blank" rel="noopener noreferrer" class="underline text-indigo-400 hover:text-indigo-600">
