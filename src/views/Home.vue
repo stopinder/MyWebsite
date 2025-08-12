@@ -193,12 +193,19 @@
         </h1>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          The fun personality assessment you may have explored demonstrates how AI can support psychotherapists in navigating complex emotional landscapes. It’s an inviting step toward a broader vision of integrated, insightful care.
+          The fun personality assessment you explored demonstrates how AI can support psychotherapists in navigating complex emotional landscapes. It’s an inviting step toward a broader vision of integrated, insightful care.
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          I am building a comprehensive container app tailored for psychotherapists and cliniciansOur mission is to empower psychotherapists and clinicians with an all-in-one, integrated platform that seamlessly combines scheduling, billing, secure client access, and AI-assisted tools. Designed to honor clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
+          I am building a comprehensive container app tailored for psychotherapists and clinicians. Our mission is to empower psychotherapists and clinicians with an all-in-one, integrated platform that seamlessly combines scheduling, billing, secure client access, and AI-assisted tools. Designed to honor clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
+          <br /><br />
+          The
+          <a href="https://heliosynthesis.org" target="_blank" rel="noopener noreferrer" class="underline text-indigo-400 hover:text-indigo-600">
+            fun personality assessment
+          </a>
+          you explored demonstrates how AI can support psychotherapists in navigating complex emotional landscapes. It’s an inviting step toward a broader vision of integrated, insightful care.
         </p>
+
 
         <p class="text-lg leading-relaxed text-slate-200">
           In a world marked by rising trauma from global conflicts and crises, accessible online trauma therapy is more vital than ever. Our platform evolves alongside AI advancements to empower therapists—enhancing their expertise and presence without replacing the human core of healing.
