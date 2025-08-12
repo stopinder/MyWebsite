@@ -22,7 +22,8 @@
         <a href="#about" class="hover:underline text-faded">About</a>
         <a href="#services" class="hover:underline text-faded">Services</a>
         <a href="#enneagram" class="hover:underline text-faded">Enneagram</a>
-        <a href="/mission" class="hover:underline font-semibold text-periwinkle">Mission</a>
+        <a href="#mission" class="block hover:underline font-semibold text-periwinkle" @click="isMenuOpen = false">Mission</a>
+
         <a href="#contact" class="hover:underline text-faded">Book</a>
         <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap text-faded">Symbolic Insight</a>
       </nav>
