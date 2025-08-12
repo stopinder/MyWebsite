@@ -126,15 +126,18 @@
             <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            “Working with Rob felt like walking into a sacred space. I left each session more whole.”
+            “Rob is the best therapist I have met in 10 years.”
             <footer class="mt-3 text-sm text-slate-400">— J.L., 2022</footer>
           </blockquote>
         </div>
 
-        <p class="text-center text-slate-400 mt-10">
-          Curious to explore this work yourself?
-          <a href="#contact" class="text-periwinkle hover:underline">Book a session →</a>
-        </p>
+        <a
+            href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
+            class="text-periwinkle hover:underline"
+        >
+          Get in Touch →
+        </a>
+
       </section>
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
