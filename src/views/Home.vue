@@ -278,7 +278,7 @@ onMounted(() => {
 
 import MandorlaDivider from '../components/MandorlaDivider.vue'
 
-function donate() {
+function Donate() {
   window.open('https://buymeacoffee.com/heliosynth', '_blank');
 }
 </script>
