@@ -30,11 +30,10 @@
         <!-- Center: Desktop Navigation -->
         <nav v-if="!isMenuOpen && windowWidth >= 768" class="hidden md:flex justify-center space-x-4 text-sm">
 
-        <a href="#about" class="hover:underline">About</a>
+          <a href="#about" class="hover:underline">About</a>
           <a href="#services" class="hover:underline">Services</a>
           <a href="#enneagram" class="hover:underline">Enneagram</a>
-          <router-link to="/mission" class="hover:underline">Mission</router-link>
-
+          <a href="#mission" class="hover:underline">Mission</a>
           <a href="#contact" class="hover:underline">Book</a>
           <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap">Symbolic Insight</a>
         </nav>
@@ -54,16 +53,10 @@
         <a href="#about" class="block hover:underline">About</a>
         <a href="#services" class="block hover:underline">Services</a>
         <a href="#enneagram" class="block hover:underline">Enneagram</a>
+        <a href="#mission" class="block hover:underline" @click="isMenuOpen = false">Mission</a>
         <a href="#contact" class="block hover:underline">Book</a>
         <a href="https://heliosynthesis.org" target="_blank" class="block hover:underline">Symbolic Insight</a>
       </div>
-
-
-
-
-
-
-
 
       <!-- Hero -->
       <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
@@ -80,9 +73,6 @@
           Get in Touch
         </a>
       </section>
-
-
-
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
@@ -146,8 +136,6 @@
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
-
-
       <!-- Services -->
       <section id="services" class="py-20 px-6 bg-celestial text-slate-100 text-center">
         <h3 class="text-2xl font-display font-semibold mb-6">Therapeutic Modalities</h3>
@@ -191,19 +179,46 @@
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
-      <!-- Contact -->
-      <section id="contact" class="py-20 px-6 bg-midnight text-slate-100 text-center">
-        <h3 class="text-xl font-semibold mb-2">Schedule a Session</h3>
-        <p class="text-sm text-slate-400 mb-4">Choose a time that suits you — all sessions are online.</p>
-        <div class="max-w-xl mx-auto">
-          <iframe
-              src="https://calendly.com/robormiston/introduction"
-              width="100%" height="350" frameborder="0"
-              class="rounded-xl border border-slate-700 shadow-sm"
-              title="Calendly Booking"
-          ></iframe>
+      <section id="mission" class="max-w-3xl mx-auto py-20 px-6 space-y-10">
+        <img
+            :src="stressed"
+            alt="Therapist holding complexity"
+            class="rounded-lg w-full h-48 object-cover mb-8"
+        />
+        <h1 class="text-5xl font-cormorant font-semibold text-slate-200">
+          Our Mission
+        </h1>
+
+        <p class="text-lg leading-relaxed text-slate-200">
+          The free personality quiz you completed is a demonstration of how AI can assist psychotherapists in understanding complex emotional dynamics. It is a step towards a broader vision.
+        </p>
+
+        <p class="text-lg leading-relaxed text-slate-200">
+          I am building a comprehensive container app tailored for psychotherapists and clinicians. This app will integrate scheduling, billing, supervision, and AI-assisted tools designed to reduce burnout and improve clinical care.
+        </p>
+
+        <p class="text-lg leading-relaxed text-slate-200">
+          In the current global context, with increased trauma due to conflicts and crises, accessible online trauma therapy is essential. This platform will evolve with AI advancements to empower therapists — not replace them.
+        </p>
+
+        <p class="text-lg leading-relaxed text-slate-200">
+          Therapists hold profound complexity in their work, and AI can help shoulder that burden alongside them. Together, we aim to create a sustainable future for mental health services.
+        </p>
+
+        <p class="text-lg leading-relaxed text-slate-200">
+          To realize this vision, I invite your financial support and partnership. Your contributions will help build this vital resource for therapists and the clients they serve.
+        </p>
+
+        <div class="pt-8 flex justify-center">
+          <button
+              @click="donate"
+              class="bg-periwinkle hover:bg-indigo-600 text-midnight font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300"
+          >
+            Donate
+          </button>
         </div>
       </section>
+
 
       <!-- Footer -->
       <div class="flex justify-center items-center mt-4 space-x-2">
@@ -231,6 +246,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import stressed from '../assets/stressed.jpg'
 
 const showName = ref(false)
 const isMenuOpen = ref(false)
@@ -249,5 +265,8 @@ onMounted(() => {
 })
 
 import MandorlaDivider from '../components/MandorlaDivider.vue'
-</script>
 
+function donate() {
+  window.open('https://buymeacoffee.com/heliosynth', '_blank');
+}
+</script>

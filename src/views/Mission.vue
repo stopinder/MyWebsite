@@ -17,18 +17,18 @@
         </div>
       </div>
 
+      <!-- Desktop Navigation -->
       <nav class="hidden md:flex justify-center space-x-4 text-sm">
         <a href="/" class="hover:underline text-faded">Home</a>
         <a href="#about" class="hover:underline text-faded">About</a>
         <a href="#services" class="hover:underline text-faded">Services</a>
         <a href="#enneagram" class="hover:underline text-faded">Enneagram</a>
-        <a href="#mission" class="block hover:underline font-semibold text-periwinkle" @click="isMenuOpen = false">Mission</a>
-
+        <a href="/mission" class="hover:underline font-semibold text-periwinkle">Mission</a>
         <a href="#contact" class="hover:underline text-faded">Book</a>
         <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap text-faded">Symbolic Insight</a>
       </nav>
 
-
+      <!-- Mobile Hamburger -->
       <div class="flex justify-end md:hidden">
         <button @click="isMenuOpen = !isMenuOpen" class="text-periwinkle">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -49,8 +49,7 @@
       <a href="https://heliosynthesis.org" target="_blank" rel="noopener noreferrer" class="block hover:underline text-periwinkle" @click="isMenuOpen = false">Symbolic Insight</a>
     </div>
 
-
-    <!-- Impactful image -->
+    <!-- Impactful Image -->
     <div class="max-w-3xl mx-auto mt-12 px-6">
       <img
           :src="stressed"
@@ -59,7 +58,7 @@
       />
     </div>
 
-    <!-- Mission content -->
+    <!-- Mission Content -->
     <main class="max-w-3xl mx-auto py-20 px-6 space-y-10">
 
       <h1 class="text-5xl font-cormorant font-semibold text-slate-200">

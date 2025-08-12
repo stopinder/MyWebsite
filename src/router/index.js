@@ -3,7 +3,7 @@ import Home from '../views/Home.vue'
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/mission', component: () => import('../views/Mission.vue') },
+
 ]
 
 const router = createRouter({
