@@ -34,7 +34,7 @@
           <a href="#services" class="hover:underline">Services</a>
           <a href="#enneagram" class="hover:underline">Enneagram</a>
           <a href="#mission" class="hover:underline">Mission</a>
-          <a href="#contact" class="hover:underline">Book</a>
+          <a href="https://calendly.com/robormiston/new-meeting" target="_blank" rel="noopener noreferrer" class="hover:underline">Book</a>
           <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap">Symbolic Insight</a>
         </nav>
 
@@ -46,6 +46,7 @@
             </svg>
           </button>
         </div>
+
 
       </header>
       <!-- Mobile Navigation Dropdown -->
