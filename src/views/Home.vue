@@ -118,7 +118,7 @@
             <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            "I’ve tried many approaches to healing. Rob’s symbolic and clear method changed everything. ⭐ ⭐ ⭐ ⭐ ⭐”
+            "Rob’s approach unlocked a whole new perspective. ⭐ ⭐ ⭐ ⭐ ⭐.”
             <footer class="mt-3 text-sm text-slate-400">— A.M., 2023</footer>
           </blockquote>
 
@@ -126,7 +126,7 @@
             <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            "Rob is the best therapist I have met in 10 years. ⭐ ⭐ ⭐ ⭐ ⭐”
+            "Rob is the best therapist I have met in 10 years. ⭐ ⭐ ⭐ ⭐ ⭐.”
             <footer class="mt-3 text-sm text-slate-400">— J.L., 2022</footer>
           </blockquote>
         </div>
@@ -191,9 +191,10 @@
             alt="Therapist holding complexity"
             class="rounded-lg w-full h-48 object-cover mb-8"
         />
-        <h1 class="text-5xl font-cormorant font-semibold text-slate-200">
+        <h1 class="text-5xl font-cormorant font-semibold text-slate-200 text-center">
           Our Mission
         </h1>
+
 
 
 
@@ -204,7 +205,7 @@
           <a href="https://heliosynthesis.org" target="_blank" rel="noopener noreferrer" class="underline text-indigo-400 hover:text-indigo-600">
             fun personality assessment
           </a>
-          you explored demonstrates how AI can support psychotherapists in navigating complex emotional landscapes. It’s an inviting step toward a broader vision of integrated, insightful care.
+          you may have explored demonstrates how AI can support psychotherapists in navigating complex emotional landscapes. It’s an inviting step toward a broader vision of integrated, insightful care.
         </p>
 
 
@@ -217,7 +218,9 @@
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          To bring this vision to life, we warmly invite your financial support and partnership. Your contributions will directly fuel the development of this vital resource—strengthening therapists and the clients they serve across the globe.
+          Here’s a smoother, integrated version for your site:
+
+          To help bring this vision to life, we invite your financial support and partnership. Your contribution will directly power the development of this vital resource—supporting therapists and the clients they serve worldwide. When you click “Donate,” you’ll be taken to our Buy Me a Coffee page, where you can read more in depth about what we’re building and how your support makes a difference.
 
 
         </p>
