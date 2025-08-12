@@ -193,28 +193,30 @@
         </h1>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          The free personality quiz you completed is a demonstration of how AI can assist psychotherapists in understanding complex emotional dynamics. It is a step towards a broader vision.
+          The fun personality assessment you may have explored demonstrates how AI can support psychotherapists in navigating complex emotional landscapes. It’s an inviting step toward a broader vision of integrated, insightful care.
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          I am building a comprehensive container app tailored for psychotherapists and clinicians. This app will integrate scheduling, billing, supervision, and AI-assisted tools designed to reduce burnout and improve clinical care.
+          I am building a comprehensive container app tailored for psychotherapists and cliniciansOur mission is to empower psychotherapists and clinicians with an all-in-one, integrated platform that seamlessly combines scheduling, billing, secure client access, and AI-assisted tools. Designed to honor clinical complexity and support therapist well-being, our app fosters deeper connection, reduces administrative burden, and enhances the quality of care. With built-in supervision features and flexible governance by the therapist, we provide a trusted container where clinical practice and innovation meet—helping therapists thrive in every aspect of their work.
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          In the current global context, with increased trauma due to conflicts and crises, accessible online trauma therapy is essential. This platform will evolve with AI advancements to empower therapists — not replace them.
+          In a world marked by rising trauma from global conflicts and crises, accessible online trauma therapy is more vital than ever. Our platform evolves alongside AI advancements to empower therapists—enhancing their expertise and presence without replacing the human core of healing.
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          Therapists hold profound complexity in their work, and AI can help shoulder that burden alongside them. Together, we aim to create a sustainable future for mental health services.
+          Therapists carry profound complexity in their work, and AI is designed to shoulder that burden alongside them. Together, we strive to build a sustainable future for mental health services—one that honors the depth of clinical care while easing the weight of administrative and emotional demands.
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          To realize this vision, I invite your financial support and partnership. Your contributions will help build this vital resource for therapists and the clients they serve.
+          To bring this vision to life, we warmly invite your financial support and partnership. Your contributions will directly fuel the development of this vital resource—strengthening therapists and the clients they serve across the globe.
+
+
         </p>
 
         <div class="pt-8 flex justify-center">
           <button
-              @click="donate"
+              @click="Donate"
               class="bg-periwinkle hover:bg-indigo-600 text-midnight font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300"
           >
             Donate
