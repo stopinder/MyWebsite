@@ -6,7 +6,7 @@
       <div class="flex items-start flex-col">
         <router-link to="/" class="flex items-center space-x-3 flex-shrink-0">
           <img
-              src="/images/favmine.png"
+              :src="favmine"
               alt="Rob Ormiston logo"
               class="w-8 h-8 rounded-full shadow-md border border-slate-700 object-cover"
           />
@@ -47,13 +47,13 @@
       <a href="https://heliosynthesis.org" target="_blank" class="block hover:underline text-periwinkle">Symbolic Insight</a>
     </div>
 
-    <!-- Placeholder for impactful image -->
+    <!-- Impactful image -->
     <div class="max-w-3xl mx-auto mt-12 px-6">
-      <div
-          class="border-4 border-dashed border-periwinkle rounded-lg h-48 flex items-center justify-center text-periwinkle font-semibold text-xl"
-      >
-        Image Placeholder: Therapist holding complexity
-      </div>
+      <img
+          :src="stressed"
+          alt="Therapist holding complexity"
+          class="rounded-lg h-48 w-full object-cover"
+      />
     </div>
 
     <!-- Mission content -->
@@ -98,12 +98,13 @@
 
 <script setup>
 import { ref } from 'vue'
+import favmine from '../assets/favmine.png'
+import stressed from '../assets/stressed.jpg'
+
 
 const isMenuOpen = ref(false)
 
 function donate() {
   window.open('https://buymeacoffee.com/heliosynth', '_blank');
-
 }
 </script>
-

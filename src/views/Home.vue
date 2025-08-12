@@ -13,7 +13,7 @@
         <div class="flex items-start flex-col">
           <router-link to="/" class="flex items-center space-x-3 flex-shrink-0">
             <img
-                src="/images/favmine.png"
+                src="/src/assets/favmine.png"
                 alt="Rob Ormiston logo"
                 class="w-8 h-8 rounded-full shadow-md border border-slate-700 object-cover"
             />
@@ -100,7 +100,7 @@
             </p>
           </div>
           <div class="md:w-1/3 mt-4">
-            <img src="/images/rob-placeholder.jpg" alt="Rob Ormiston portrait"
+            <img src="/src/assets/rob-placeholder.jpg" alt="Rob Ormiston portrait"
                  class="w-40 h-40 rounded-full mx-auto md:mx-0 shadow-sm border border-slate-700 object-cover"/>
           </div>
         </div>
@@ -210,7 +210,7 @@
         <span class="text-slate-500">Registered Member of</span>
         <a href="https://www.bacp.co.uk/" target="_blank" rel="noopener" class="inline-block">
           <img
-              src="/images/BACP.png"
+              src="/src/assets/BACP.png"
               alt="BACP Logo"
               class="h-6 md:h-8 object-contain"
           />
