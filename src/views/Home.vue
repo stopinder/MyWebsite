@@ -67,7 +67,7 @@
           Trauma-Informed Psychotherapy & Counselling
         </h1>
         <p class="text-lg text-faded mb-8 leading-relaxed font-inter">
-          I’m a psychotherapist and founder of Heliosynthesis, bringing over 25 years of experience in mental health settings, including clinical leadership within the NHS. My work delves deeply into trauma, memory, and meaning, primarily using Internal Family Systems (IFS) and EMDR.
+          Specializing in trauma-informed psychotherapy and counselling, I offer evidence-based approaches grounded in Internal Family Systems and EMDR. My work provides a structured, compassionate space where complex trauma and memory can be explored safely, fostering healing, resilience, and meaningful personal growth.
 
           My approach is reflective and symbolic, grounded in lived experience, providing clients with clarity, containment, and genuine connection.
 
