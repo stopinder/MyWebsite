@@ -38,13 +38,13 @@
 
     <!-- Mobile Navigation Dropdown -->
     <div v-if="isMenuOpen" class="md:hidden px-6 py-4 bg-midnight text-periwinkle space-y-2">
-      <a href="/" class="block hover:underline text-periwinkle">Home</a>
-      <a href="#about" class="block hover:underline text-periwinkle">About</a>
-      <a href="#services" class="block hover:underline text-periwinkle">Services</a>
-      <a href="#enneagram" class="block hover:underline text-periwinkle">Enneagram</a>
-      <router-link to="/mission" class="block hover:underline font-semibold text-periwinkle">Mission</router-link>
-      <a href="#contact" class="block hover:underline text-periwinkle">Book</a>
-      <a href="https://heliosynthesis.org" target="_blank" class="block hover:underline text-periwinkle">Symbolic Insight</a>
+      <router-link to="/" class="block hover:underline text-periwinkle" @click="isMenuOpen = false">Home</router-link>
+      <router-link to="#about" class="block hover:underline text-periwinkle" @click="isMenuOpen = false">About</router-link>
+      <router-link to="#services" class="block hover:underline text-periwinkle" @click="isMenuOpen = false">Services</router-link>
+      <router-link to="#enneagram" class="block hover:underline text-periwinkle" @click="isMenuOpen = false">Enneagram</router-link>
+      <router-link to="/mission" class="block hover:underline font-semibold text-periwinkle" @click="isMenuOpen = false">Mission</router-link>
+      <router-link to="#contact" class="block hover:underline text-periwinkle" @click="isMenuOpen = false">Book</router-link>
+      <a href="https://heliosynthesis.org" target="_blank" class="block hover:underline text-periwinkle" rel="noopener noreferrer" @click="isMenuOpen = false">Symbolic Insight</a>
     </div>
 
     <!-- Impactful image -->
@@ -100,7 +100,6 @@
 import { ref } from 'vue'
 import favmine from '../assets/favmine.png'
 import stressed from '../assets/stressed.jpg'
-
 
 const isMenuOpen = ref(false)
 
