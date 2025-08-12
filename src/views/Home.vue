@@ -21,9 +21,10 @@
               <span v-if="showName" class="text-xl font-cormorant font-semibold whitespace-nowrap">Rob Ormiston</span>
             </transition>
           </router-link>
-          <div class="mt-1 ml-11 text-sm text-slate-400 font-medium leading-snug">
+          <div class="ml-11 text-sm text-slate-400 font-medium leading-snug">
             <a href="/chrysalis" class="hover:underline">Chrysalis Therapy Services</a>
           </div>
+
         </div>
 
         <!-- Center: Desktop Navigation -->
@@ -32,6 +33,8 @@
         <a href="#about" class="hover:underline">About</a>
           <a href="#services" class="hover:underline">Services</a>
           <a href="#enneagram" class="hover:underline">Enneagram</a>
+          <router-link to="/mission" class="hover:underline">Mission</router-link>
+
           <a href="#contact" class="hover:underline">Book</a>
           <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap">Symbolic Insight</a>
         </nav>
