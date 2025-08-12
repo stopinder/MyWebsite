@@ -22,10 +22,11 @@
         <a href="#about" class="hover:underline text-faded">About</a>
         <a href="#services" class="hover:underline text-faded">Services</a>
         <a href="#enneagram" class="hover:underline text-faded">Enneagram</a>
-        <router-link to="/mission" class="hover:underline font-semibold text-periwinkle">Mission</router-link>
+        <a href="/mission" class="hover:underline font-semibold text-periwinkle">Mission</a>
         <a href="#contact" class="hover:underline text-faded">Book</a>
         <a href="https://heliosynthesis.org" target="_blank" class="hover:underline whitespace-nowrap text-faded">Symbolic Insight</a>
       </nav>
+
 
       <div class="flex justify-end md:hidden">
         <button @click="isMenuOpen = !isMenuOpen" class="text-periwinkle">
