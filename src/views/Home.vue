@@ -234,11 +234,12 @@
 
         <div class="pt-8 flex justify-center">
           <button
-              @click="Donate"
+              @click="() => window.open('https://buymeacoffee.com/heliosynth', '_blank')"
               class="bg-periwinkle hover:bg-indigo-600 text-midnight font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300"
           >
-            Donate
+            ☕ Buy Me a Coffee
           </button>
+
         </div>
       </section>
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
