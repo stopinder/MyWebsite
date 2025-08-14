@@ -51,14 +51,18 @@
               target="_blank"
               rel="noopener noreferrer"
               class="hover:underline"
-          >Book</a
-          >
+          >Book</a>
           <a
               href="https://heliosynthesis.org"
               target="_blank"
               class="hover:underline whitespace-nowrap"
-          >Symbolic Insight</a
-          >
+          >Symbolic Insight</a>
+          <a
+              href="https://blog.robormiston.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline"
+          >Blog</a>
         </nav>
 
         <!-- Right: Hamburger (mobile only) -->
@@ -86,37 +90,32 @@
           v-if="isMenuOpen"
           class="md:hidden px-6 py-4 bg-midnight text-white space-y-2"
       >
-        <a href="#about" class="block hover:underline" @click="isMenuOpen = false"
-        >About</a
-        >
-        <a href="#services" class="block hover:underline" @click="isMenuOpen = false"
-        >Services</a
-        >
-        <a
-            href="#enneagram"
-            class="block hover:underline"
-            @click="isMenuOpen = false"
-        >Enneagram</a
-        >
-        <a href="#mission" class="block hover:underline" @click="isMenuOpen = false"
-        >Mission</a
-        >
+        <a href="#about" class="block hover:underline" @click="isMenuOpen = false">About</a>
+        <a href="#services" class="block hover:underline" @click="isMenuOpen = false">Services</a>
+        <a href="#enneagram" class="block hover:underline" @click="isMenuOpen = false">Enneagram</a>
+        <a href="#mission" class="block hover:underline" @click="isMenuOpen = false">Mission</a>
         <a
             href="https://calendly.com/robormiston/new-meeting"
             target="_blank"
             rel="noopener noreferrer"
             class="block hover:underline"
             @click="isMenuOpen = false"
-        >Book</a
-        >
+        >Book</a>
         <a
             href="https://heliosynthesis.org"
             target="_blank"
             class="block hover:underline"
             @click="isMenuOpen = false"
-        >Symbolic Insight</a
-        >
+        >Symbolic Insight</a>
+        <a
+            href="https://blog.robormiston.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block hover:underline"
+            @click="isMenuOpen = false"
+        >Blog</a>
       </div>
+
 
       <!-- Hero -->
       <section
