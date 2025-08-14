@@ -15,10 +15,7 @@
       >
         <!-- Left: Logo + Name + Chrysalis -->
         <div class="flex items-start flex-col">
-          <router-link
-              to="/"
-              class="flex items-center space-x-3 flex-shrink-0"
-          >
+          <router-link to="/" class="flex items-center space-x-3 flex-shrink-0">
             <img
                 src="/src/assets/favmine.png"
                 alt="Rob Ormiston logo"
@@ -28,8 +25,7 @@
               <span
                   v-if="showName"
                   class="text-xl font-cormorant font-semibold whitespace-nowrap"
-              >Rob Ormiston</span
-              >
+              >Rob Ormiston</span>
             </transition>
           </router-link>
           <div class="ml-11 text-sm text-slate-400 font-medium leading-snug">
@@ -37,93 +33,164 @@
           </div>
         </div>
 
-        <!-- Center: Desktop Navigation -->
+        <!-- Center: Desktop Navigation (grouped) -->
         <nav
             v-if="!isMenuOpen && windowWidth >= 768"
-            class="hidden md:flex justify-center space-x-4 text-sm"
+            class="hidden md:flex justify-center items-center gap-5 text-sm"
         >
-          <a href="#about" class="hover:underline">About</a>
-          <a href="#services" class="hover:underline">Services</a>
-          <a href="#enneagram" class="hover:underline">Enneagram</a>
-          <a href="#mission" class="hover:underline">Mission</a>
+          <!-- Home -->
+          <router-link to="/" class="hover:underline">Home</router-link>
+
+          <!-- About (dropdown) -->
+          <div
+              class="relative"
+              @mouseenter="aboutHover = true"
+              @mouseleave="aboutHover = false"
+          >
+            <button
+                class="inline-flex items-center gap-1 hover:underline"
+                :aria-expanded="aboutHover ? 'true' : 'false'"
+                aria-haspopup="menu"
+            >
+              About
+              <span class="text-slate-400">▾</span>
+            </button>
+            <div
+                v-show="aboutHover"
+                class="absolute left-0 top-full w-44 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
+                role="menu"
+            >
+              <a href="/#about" class="block px-3 py-2 hover:bg-white/5" role="menuitem">About Me</a>
+              <a href="/#mission" class="block px-3 py-2 hover:bg-white/5" role="menuitem">Mission</a>
+            </div>
+          </div>
+
+
+          <!-- Services (top-level) -->
+          <a href="/#services" class="hover:underline">Services</a>
+
+          <!-- Enneagram (top-level) -->
+          <a href="/#enneagram" class="hover:underline">Enneagram</a>
+
+          <!-- Resources (dropdown) -->
+          <div
+              class="relative"
+              @mouseenter="resourcesHover = true"
+              @mouseleave="resourcesHover = false"
+          >
+            <button
+                class="inline-flex items-center gap-1 hover:underline"
+                :aria-expanded="resourcesHover ? 'true' : 'false'"
+                aria-haspopup="menu"
+            >
+              Resources
+              <span class="text-slate-400">▾</span>
+            </button>
+            <div
+                v-show="resourcesHover"
+                class="absolute left-0 top-full w-56 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
+                role="menu"
+            >
+              <a
+                  href="https://blog.robormiston.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block px-3 py-2 hover:bg-white/5"
+                  role="menuitem"
+              >
+                Blog <span class="ml-1 text-slate-400">↗</span>
+              </a>
+
+              <a
+                  href="https://heliosynthesis.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block px-3 py-2 hover:bg-white/5 whitespace-nowrap"
+                  role="menuitem"
+              >
+                Symbolic Insight <span class="ml-1 text-slate-400">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Book (CTA) -->
           <a
               href="https://calendly.com/robormiston/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              class="hover:underline"
+              class="inline-flex items-center px-3 py-1.5 rounded-md font-medium bg-[#b08d57] text-midnight hover:opacity-90 transition"
           >Book</a>
-          <a
-              href="https://heliosynthesis.org"
-              target="_blank"
-              class="hover:underline whitespace-nowrap"
-          >Symbolic Insight</a>
-          <a
-              href="https://blog.robormiston.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:underline"
-          >Blog</a>
         </nav>
 
         <!-- Right: Hamburger (mobile only) -->
         <div class="flex justify-end md:hidden">
-          <button @click="isMenuOpen = !isMenuOpen" class="text-white">
-            <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-            >
-              <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-              />
+          <button @click="isMenuOpen = !isMenuOpen" class="text-white" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
       </header>
 
-      <!-- Mobile Navigation Dropdown -->
-      <div
-          v-if="isMenuOpen"
-          class="md:hidden px-6 py-4 bg-midnight text-white space-y-2"
-      >
-        <a href="#about" class="block hover:underline" @click="isMenuOpen = false">About</a>
-        <a href="#services" class="block hover:underline" @click="isMenuOpen = false">Services</a>
-        <a href="#enneagram" class="block hover:underline" @click="isMenuOpen = false">Enneagram</a>
-        <a href="#mission" class="block hover:underline" @click="isMenuOpen = false">Mission</a>
+      <!-- Mobile Navigation Dropdown (collapsible groups) -->
+      <div v-if="isMenuOpen" class="md:hidden px-6 py-4 bg-midnight text-white space-y-2">
+        <router-link to="/" class="block hover:underline" @click="isMenuOpen = false">Home</router-link>
+
+        <!-- About collapsible -->
+        <button
+            class="w-full flex items-center justify-between py-2 text-left hover:underline"
+            @click="aboutOpen = !aboutOpen"
+            :aria-expanded="aboutOpen ? 'true' : 'false'"
+        >
+          <span>About</span>
+          <span class="text-slate-400">{{ aboutOpen ? '▴' : '▾' }}</span>
+        </button>
+        <div v-show="aboutOpen" class="pl-3 space-y-1">
+          <a href="/#about" class="block hover:underline" @click="closeMenu()">About Me</a>
+          <a href="/#mission" class="block hover:underline" @click="closeMenu()">Mission</a>
+        </div>
+
+        <a href="/#services" class="block hover:underline" @click="closeMenu()">Services</a>
+        <a href="/#enneagram" class="block hover:underline" @click="closeMenu()">Enneagram</a>
+
+        <!-- Resources collapsible -->
+        <button
+            class="w-full flex items-center justify-between py-2 text-left hover:underline"
+            @click="resourcesOpen = !resourcesOpen"
+            :aria-expanded="resourcesOpen ? 'true' : 'false'"
+        >
+          <span>Resources</span>
+          <span class="text-slate-400">{{ resourcesOpen ? '▴' : '▾' }}</span>
+        </button>
+        <div v-show="resourcesOpen" class="pl-3 space-y-1">
+          <a
+              href="https://blog.robormiston.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block hover:underline"
+              @click="closeMenu"
+          >Blog <span class="ml-1 text-slate-400">↗</span></a>
+          <a
+              href="https://heliosynthesis.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block hover:underline"
+              @click="closeMenu"
+          >Symbolic Insight <span class="ml-1 text-slate-400">↗</span></a>
+        </div>
+
         <a
             href="https://calendly.com/robormiston/new-meeting"
             target="_blank"
             rel="noopener noreferrer"
-            class="block hover:underline"
-            @click="isMenuOpen = false"
+            class="block mt-2 text-center px-3 py-2 rounded-md font-medium bg-[#b08d57] text-midnight"
+            @click="closeMenu()"
         >Book</a>
-        <a
-            href="https://heliosynthesis.org"
-            target="_blank"
-            class="block hover:underline"
-            @click="isMenuOpen = false"
-        >Symbolic Insight</a>
-        <a
-            href="https://blog.robormiston.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block hover:underline"
-            @click="isMenuOpen = false"
-        >Blog</a>
       </div>
 
-
       <!-- Hero -->
-      <section
-          class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white"
-      >
-        <h1
-            class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight text-white"
-        >
+      <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
+        <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight text-white">
           Trauma-Informed Psychotherapy & Counselling
         </h1>
         <p class="text-lg text-faded mb-8 leading-relaxed font-inter">
@@ -137,17 +204,13 @@
         <a
             href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
             class="text-periwinkle hover:underline"
-        >Get in Touch →</a
-        >
+        >Get in Touch →</a>
       </section>
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- About -->
-      <section
-          id="about"
-          class="py-20 px-6 max-w-4xl mx-auto text-slate-200"
-      >
+      <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
         <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
           <div class="md:w-2/3 text-center md:text-left">
             <h3 class="text-2xl font-display font-semibold mb-4">About Me</h3>
@@ -176,17 +239,11 @@
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Client Reflections -->
-      <section
-          class="py-20 px-6 max-w-6xl mx-auto text-slate-200"
-      >
-        <p
-            class="text-center text-sm uppercase tracking-wide text-slate-400 mb-2"
-        >
+      <section class="py-20 px-6 max-w-6xl mx-auto text-slate-200">
+        <p class="text-center text-sm uppercase tracking-wide text-slate-400 mb-2">
           Words from clients
         </p>
-        <h3
-            class="text-2xl font-display font-semibold mb-6 text-center"
-        >
+        <h3 class="text-2xl font-display font-semibold mb-6 text-center">
           Client Reflections
         </h3>
 
@@ -245,18 +302,14 @@
           <a
               href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
               class="text-periwinkle hover:underline"
-          >Get in Touch →</a
-          >
+          >Get in Touch →</a>
         </div>
       </section>
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Services -->
-      <section
-          id="services"
-          class="py-20 px-6 bg-celestial text-slate-100 text-center"
-      >
+      <section id="services" class="py-20 px-6 bg-celestial text-slate-100 text-center">
         <h3 class="text-2xl font-display font-semibold mb-6">
           Therapeutic Modalities
         </h3>
@@ -288,13 +341,8 @@
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Enneagram Section -->
-      <section
-          id="enneagram"
-          class="py-20 px-6 max-w-4xl mx-auto text-slate-200"
-      >
-        <h3
-            class="text-3xl font-display font-semibold mb-4 text-center"
-        >
+      <section id="enneagram" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
+        <h3 class="text-3xl font-display font-semibold mb-4 text-center">
           Understanding the Enneagram
         </h3>
         <p class="text-lg text-slate-300 leading-relaxed mb-4">
@@ -319,18 +367,13 @@
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Mission Section -->
-      <section
-          id="mission"
-          class="max-w-3xl mx-auto py-20 px-6 space-y-10"
-      >
+      <section id="mission" class="max-w-3xl mx-auto py-20 px-6 space-y-10">
         <img
             :src="stressed"
             alt="Therapist holding complexity"
             class="rounded-lg w-full h-48 object-cover mb-8"
         />
-        <h1
-            class="text-5xl font-cormorant font-semibold text-slate-200 text-center"
-        >
+        <h1 class="text-5xl font-cormorant font-semibold text-slate-200 text-center">
           Our Mission
         </h1>
 
@@ -352,8 +395,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="underline text-indigo-400 hover:text-indigo-600"
-          >fun personality assessment</a
-          >
+          >fun personality assessment</a>
           you may have explored demonstrates how AI can support psychotherapists
           in navigating complex emotional landscapes. It’s an inviting step toward
           a broader vision of integrated, insightful care.
@@ -412,29 +454,21 @@
         </a>
       </div>
 
-      <footer
-          class="py-6 text-center text-sm text-slate-600 bg-midnight space-y-2"
-      >
+      <footer class="py-6 text-center text-sm text-slate-600 bg-midnight space-y-2">
         <div>
-          <a
-              href="mailto:discover@heliosynthesis.org"
-              class="hover:underline"
-          >discover@heliosynthesis.org</a
-          >
+          <a href="mailto:discover@heliosynthesis.org" class="hover:underline">discover@heliosynthesis.org</a>
         </div>
         <div class="space-x-4">
           <a
               href="https://www.linkedin.com/in/chrysalistherapyservices"
               target="_blank"
               class="hover:underline"
-          >LinkedIn</a
-          >
+          >LinkedIn</a>
           <a
               href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info"
               target="_blank"
               class="hover:underline"
-          >Facebook</a
-          >
+          >Facebook</a>
         </div>
         <div>© 2025 Rob Ormiston. All rights reserved.</div>
       </footer>
@@ -451,11 +485,16 @@ const showName = ref(false)
 const isMenuOpen = ref(false)
 const windowWidth = ref(window.innerWidth)
 
-onMounted(() => {
-  setTimeout(() => {
-    showName.value = true
-  }, 300)
+// Desktop dropdown hovers
+const aboutHover = ref(false)
+const resourcesHover = ref(false)
 
+// Mobile collapsibles
+const aboutOpen = ref(false)
+const resourcesOpen = ref(false)
+
+onMounted(() => {
+  setTimeout(() => { showName.value = true }, 300)
   window.addEventListener('resize', () => {
     windowWidth.value = window.innerWidth
   })
@@ -463,5 +502,11 @@ onMounted(() => {
 
 function openBuyMeACoffee() {
   window.open('https://buymeacoffee.com/heliosynth', '_blank')
+}
+
+function closeMenu() {
+  isMenuOpen.value = false
+  aboutOpen.value = false
+  resourcesOpen.value = false
 }
 </script>
