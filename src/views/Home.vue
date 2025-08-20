@@ -171,7 +171,7 @@
               @click="closeMenu"
           >Blog <span class="ml-1 text-slate-400">↗</span></a>
           <a
-              href="https://heliosynthesis.org"
+              href="https://blog.robormiston.com"
               target="_blank"
               rel="noopener noreferrer"
               class="block hover:underline"
