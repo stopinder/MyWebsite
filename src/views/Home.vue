@@ -100,18 +100,9 @@
               >
                 Blog <span class="ml-1 text-slate-400">↗</span>
               </a>
-
-              <a
-                  href="https://heliosynthesis.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="block px-3 py-2 hover:bg-white/5 whitespace-nowrap"
-                  role="menuitem"
-              >
-                Symbolic Insight <span class="ml-1 text-slate-400">↗</span>
-              </a>
             </div>
           </div>
+
 
           <!-- Book (CTA) -->
           <a
