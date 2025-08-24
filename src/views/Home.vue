@@ -19,18 +19,22 @@
             <img
                 src="/src/assets/favmine.png"
                 alt="Rob Ormiston logo"
-                class="w-full h-auto rounded-full shadow-md border border-slate-700 object-cover"
+                class="size-16 md:size-20 lg:size-24 object-cover shrink-0"
+
+
+
+
 
             />
             <transition name="fade-up" appear>
               <span
                   v-if="showName"
                   class="text-xl font-cormorant font-semibold whitespace-nowrap"
-              >Rob Ormiston</span>
+              ></span>
             </transition>
           </router-link>
           <div class="ml-11 text-sm text-slate-400 font-medium leading-snug">
-            Chrysalis Therapy Services
+
           </div>
         </div>
 
