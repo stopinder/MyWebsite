@@ -19,7 +19,8 @@
             <img
                 src="/src/assets/favmine.png"
                 alt="Rob Ormiston logo"
-                class="w-8 h-8 rounded-full shadow-md border border-slate-700 object-cover"
+                class="w-full h-auto rounded-full shadow-md border border-slate-700 object-cover"
+
             />
             <transition name="fade-up" appear>
               <span
