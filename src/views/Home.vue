@@ -501,10 +501,9 @@
 
 
       <!-- Footer -->
-      <div class="flex flex-col items-center space-y-6 py-10 bg-midnight">
+      <div class="flex flex-col items-center space-y-4 py-8 bg-midnight">
         <!-- Logos Row -->
-        <div class="flex flex-wrap justify-center items-center gap-8">
-          <!-- BACP -->
+        <div class="flex items-center space-x-6">
           <div class="flex items-center space-x-2">
             <span class="text-slate-300 text-sm">Registered Member of</span>
             <a
@@ -514,14 +513,12 @@
                 class="inline-block"
             >
               <img
-                  src="/src/assets/BACP.png"
+                  src="/images/BACP.png"
                   alt="BACP Logo"
-                  class="h-8 md:h-10 object-contain"
+                  class="h-8 object-contain"
               />
             </a>
           </div>
-
-          <!-- Syzygy -->
           <div class="flex items-center space-x-2">
             <span class="text-slate-300 text-sm">Trained at</span>
             <a
@@ -531,26 +528,9 @@
                 class="inline-block"
             >
               <img
-                  src="/src/assets/SYZERGY.png"
+                  src="/public/images/syzergy.png"
                   alt="Syzygy Institute Logo"
-                  class="h-8 md:h-10 object-contain"
-              />
-            </a>
-          </div>
-
-          <!-- University of Chichester -->
-          <div class="flex items-center space-x-2">
-            <span class="text-slate-300 text-sm">Graduate of</span>
-            <a
-                href="https://www.chi.ac.uk/"
-                target="_blank"
-                rel="noopener"
-                class="inline-block"
-            >
-              <img
-                  src="/src/assets/UC.png"
-                  alt="University of Chichester Logo"
-                  class="h-8 md:h-10 object-contain"
+                  class="h-8 object-contain"
               />
             </a>
           </div>
@@ -584,15 +564,96 @@
           </div>
           <div class="text-slate-400">© 2025 Rob Ormiston. All rights reserved.</div>
         </footer>
-      </div> <!-- end of footer container -->
+      </div>
 
-    </div> <!-- closes .relative z-10 -->
-  </div> <!-- closes outer .relative font-inter -->
+    </div>
+  </div><!-- Footer -->
+  <div class="flex flex-col items-center space-y-6 py-10 bg-midnight">
+    <!-- Logos Row -->
+    <div class="flex flex-wrap justify-center items-center gap-8">
+      <!-- BACP -->
+      <div class="flex items-center space-x-2">
+        <span class="text-slate-300 text-sm">Registered Member of</span>
+        <a
+            href="https://www.bacp.co.uk/"
+            target="_blank"
+            rel="noopener"
+            class="inline-block"
+        >
+          <img
+              src="/images/BACP.png"
+              alt="BACP Logo"
+              class="h-8 md:h-10 object-contain"
+          />
+        </a>
+      </div>
+
+      <!-- Syzygy -->
+      <div class="flex items-center space-x-2">
+        <span class="text-slate-300 text-sm">Trained at</span>
+        <a
+            href="https://www.syzygyinstitute.com/"
+            target="_blank"
+            rel="noopener"
+            class="inline-block"
+        >
+          <img
+              src="/public/images/syzergy.png"
+              alt="Syzygy Institute Logo"
+              class="h-8 md:h-10 object-contain"
+          />
+        </a>
+      </div>
+
+      <!-- University of Chichester -->
+      <div class="flex items-center space-x-2">
+        <span class="text-slate-300 text-sm">Graduate of</span>
+        <a
+            href="https://www.chi.ac.uk/"
+            target="_blank"
+            rel="noopener"
+            class="inline-block"
+        >
+          <img
+              src="/images/UC.png"
+              alt="University of Chichester Logo"
+              class="h-8 md:h-10 object-contain"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact + Social -->
+    <footer class="text-center text-sm text-slate-300 space-y-3">
+      <div>
+        <a
+            href="mailto:discover@heliosynthesis.org"
+            class="hover:underline text-slate-200"
+        >
+          discover@heliosynthesis.org
+        </a>
+      </div>
+      <div class="space-x-6">
+        <a
+            href="https://www.linkedin.com/in/chrysalistherapyservices"
+            target="_blank"
+            class="hover:underline text-slate-200"
+        >
+          LinkedIn
+        </a>
+        <a
+            href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info"
+            target="_blank"
+            class="hover:underline text-slate-200"
+        >
+          Facebook
+        </a>
+      </div>
+      <div class="text-slate-400">© 2025 Rob Ormiston. All rights reserved.</div>
+    </footer>
+  </div>
 
 </template>
-
-
-
 
 <script setup>
 import { ref, onMounted } from 'vue'
