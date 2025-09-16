@@ -100,8 +100,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import favmine from '../assets/favmine.png'
-import stressed from '../assets/stressed.jpg'
+import favmine from '../../public/images/favmine.png'
+import stressed from '../../public/images/stressed.jpg'
 
 const isMenuOpen = ref(false)
 

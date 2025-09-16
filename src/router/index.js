@@ -12,24 +12,31 @@ const getHeaderOffset = () => {
 }
 
 const router = createRouter({
-    history: createWebHistory(),
+    // Use BASE_URL so it works under subpaths too (e.g., Vercel previews)
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior: async (to, from, savedPosition) => {
-        if (savedPosition) return { ...savedPosition, behavior: 'smooth' }
+        const prefersReduced = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+        const behavior = prefersReduced ? 'auto' : 'smooth'
+
+        if (savedPosition) {
+            return { ...savedPosition, behavior }
+        }
 
         const offset = getHeaderOffset()
 
         if (to.hash) {
             // allow DOM to render the target after route change
             await new Promise((r) => setTimeout(r, 0))
-            const target = document.querySelector(to.hash)
+            const selector = decodeURIComponent(to.hash)
+            const target = document.querySelector(selector)
             if (target) {
                 const top = target.getBoundingClientRect().top + window.pageYOffset - offset
-                return { top, behavior: 'smooth' }
+                return { left: 0, top, behavior }
             }
         }
 
-        return { top: 0, behavior: 'smooth' }
+        return { left: 0, top: 0, behavior }
     },
 })
 

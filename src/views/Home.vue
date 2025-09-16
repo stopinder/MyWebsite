@@ -17,23 +17,24 @@
         <div class="flex items-center flex-shrink-0 space-x-4">
           <router-link to="/" class="flex items-center space-x-4">
             <img
-                src="/src/assets/favmine.png"
+                src="/images/favmine.png"
                 alt="Rob Ormiston logo"
+                width="160" height="160"
                 class="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover shrink-0"
             />
-            <span class="text-2xl md:text-3xl lg:text-4xl font-garamond font-semibold text-slate-900">
-      Rob Ormiston
-    </span>
+            <span
+                class="text-2xl md:text-3xl lg:text-4xl font-garamond font-semibold text-white"
+            >
+              Rob Ormiston
+            </span>
           </router-link>
         </div>
 
-
-        <!-- Center: Desktop Navigation (grouped) -->
+        <!-- Center: Desktop Navigation -->
         <nav
             v-if="!isMenuOpen && windowWidth >= 768"
             class="hidden md:flex justify-center items-center gap-5 text-sm"
         >
-          <!-- Home -->
           <router-link to="/" class="hover:underline">Home</router-link>
 
           <!-- About (dropdown) -->
@@ -55,22 +56,17 @@
                 class="absolute left-0 top-full w-44 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
                 role="menu"
             >
-              <a href="/#about" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
+              <router-link :to="{ hash: '#about' }" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
                 About Me
-              </a>
-              <a href="/#vision" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
+              </router-link>
+              <router-link :to="{ hash: '#vision' }" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
                 Vision
-              </a>
+              </router-link>
             </div>
           </div>
 
-
-
-          <!-- Services (top-level) -->
-          <a href="/#services" class="hover:underline">Services</a>
-
-          <!-- Enneagram (top-level) -->
-          <a href="/#enneagram" class="hover:underline">Enneagram</a>
+          <router-link :to="{ hash: '#services' }" class="hover:underline">Services</router-link>
+          <router-link :to="{ hash: '#enneagram' }" class="hover:underline">Enneagram</router-link>
 
           <!-- Resources (dropdown) -->
           <div
@@ -102,24 +98,27 @@
               </a>
             </div>
           </div>
-
-
-
         </nav>
 
         <!-- Right: Hamburger (mobile only) -->
         <div class="flex justify-end md:hidden">
           <button @click="isMenuOpen = !isMenuOpen" class="text-white" aria-label="Toggle menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+            >
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
       </header>
 
-      <!-- Mobile Navigation Dropdown (collapsible groups) -->
+      <!-- Mobile Navigation -->
       <div v-if="isMenuOpen" class="md:hidden px-6 py-4 bg-midnight text-white space-y-2">
-        <router-link to="/" class="block hover:underline" @click="isMenuOpen = false">Home</router-link>
+        <router-link to="/" class="block hover:underline" @click="closeMenu()">Home</router-link>
 
         <!-- About collapsible -->
         <button
@@ -131,12 +130,12 @@
           <span class="text-slate-400">{{ aboutOpen ? '▴' : '▾' }}</span>
         </button>
         <div v-show="aboutOpen" class="pl-3 space-y-1">
-          <a href="/#about" class="block hover:underline" @click="closeMenu()">About Me</a>
-          <a href="/#mission" class="block hover:underline" @click="closeMenu()">Mission</a>
+          <router-link :to="{ hash: '#about' }" class="block hover:underline" @click="closeMenu()">About Me</router-link>
+          <router-link :to="{ hash: '#mission' }" class="block hover:underline" @click="closeMenu()">Mission</router-link>
         </div>
 
-        <a href="/#services" class="block hover:underline" @click="closeMenu()">Services</a>
-        <a href="/#enneagram" class="block hover:underline" @click="closeMenu()">Enneagram</a>
+        <router-link :to="{ hash: '#services' }" class="block hover:underline" @click="closeMenu()">Services</router-link>
+        <router-link :to="{ hash: '#enneagram' }" class="block hover:underline" @click="closeMenu()">Enneagram</router-link>
 
         <!-- Resources collapsible -->
         <button
@@ -153,14 +152,14 @@
               target="_blank"
               rel="noopener noreferrer"
               class="block hover:underline"
-              @click="closeMenu"
+              @click="closeMenu()"
           >Blog <span class="ml-1 text-slate-400">↗</span></a>
           <a
               href="https://blog.robormiston.com"
               target="_blank"
               rel="noopener noreferrer"
               class="block hover:underline"
-              @click="closeMenu"
+              @click="closeMenu()"
           >Symbolic Insight <span class="ml-1 text-slate-400">↗</span></a>
         </div>
 
@@ -174,23 +173,23 @@
       </div>
 
       <!-- Hero -->
-      <section role="banner" aria-label="Hero"
-               class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
-
+      <section
+          role="banner"
+          aria-label="Hero"
+          class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white"
+      >
         <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight">
           Trauma-Informed Psychotherapy & Counselling
         </h1>
-
         <p class="text-lg text-slate-300 mb-8 leading-relaxed font-inter">
           Creating a safe, clear space where healing from trauma unfolds. Here,
-          complexity is met with patience and precision—helping you build
-          resilience, regain balance, and move forward with confidence.
+          complexity is met with patience and precision—helping you build resilience, regain balance,
+          and move forward with confidence.
           <span class="block mt-3">
-      My approach is reflective and symbolic, grounded in lived experience,
-      providing clients with clarity, containment, and genuine connection.
-    </span>
+            My approach is reflective and symbolic, grounded in lived experience, providing clients
+            with clarity, containment, and genuine connection.
+          </span>
         </p>
-
         <div class="flex flex-col items-center gap-3">
           <a
               aria-label="Email Rob to get in touch"
@@ -199,19 +198,14 @@
           >
             Get in Touch →
           </a>
-
-          <a
-              href="#how-i-work"
+          <router-link
+              :to="{ hash: '#how-i-work' }"
               class="text-periwinkle/90 hover:text-periwinkle underline-offset-4 hover:underline"
           >
-
             How I Work
-          </a>
+          </router-link>
         </div>
       </section>
-
-
-
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
@@ -254,17 +248,18 @@
           <!-- Image -->
           <div class="md:w-1/3 mt-4 md:self-start">
             <img
-                src="/src/assets/rob-placeholder.jpg"
+                src="/images/rob-placeholder.jpg"
                 alt="Rob Ormiston portrait"
+                width="192" height="256"
+                loading="lazy"
                 class="w-48 h-64 rounded-lg mx-auto md:mx-0 shadow-md border border-slate-700 object-cover"
             />
           </div>
         </div>
       </section>
 
-
-
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
+
       <!-- How I Work -->
       <section id="how-i-work" class="py-20 px-6 max-w-3xl mx-auto text-slate-200">
         <h2 class="text-3xl font-display font-semibold mb-8 text-center">
@@ -301,6 +296,7 @@
           </div>
         </div>
       </section>
+
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Client Reflections -->
@@ -317,9 +313,6 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
-            </svg>
             "Rob helped me reconnect with parts of myself I’d long forgotten. The work was profound ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— S.R., 2024</footer>
           </blockquote>
@@ -328,9 +321,6 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
-            </svg>
             "Rob’s approach unlocked a whole new perspective. ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— A.M., 2023</footer>
           </blockquote>
@@ -339,9 +329,6 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
-            </svg>
             "Rob is the best therapist I have met in 10 years. ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— J.L., 2022</footer>
           </blockquote>
@@ -350,9 +337,6 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
-            </svg>
             "I felt genuinely seen and safe to explore tough stuff. ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— K.T., 2024</footer>
           </blockquote>
@@ -361,9 +345,6 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
-            </svg>
             "The blend of clarity and compassion changed my day-to-day. ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— P.N., 2023</footer>
           </blockquote>
@@ -372,9 +353,6 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
-            </svg>
             "I left every session lighter and more resourced. ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— D.W., 2022</footer>
           </blockquote>
@@ -387,8 +365,6 @@
           >Get in Touch →</a>
         </div>
       </section>
-
-
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
@@ -453,14 +429,16 @@
       <!-- Vision Section -->
       <section id="vision" class="max-w-3xl mx-auto py-20 px-6 space-y-10">
         <img
-            :src="stressed"
+            src="/images/stressed.jpg"
             alt="Therapist holding complexity"
+            width="1200" height="300"
+            loading="lazy"
             class="rounded-lg w-full h-48 object-cover mb-8"
         />
 
-        <h1 class="text-5xl font-cormorant font-semibold text-slate-200 text-center">
+        <h2 class="text-5xl font-cormorant font-semibold text-slate-200 text-center">
           Vision
-        </h1>
+        </h2>
 
         <p class="text-lg leading-relaxed text-slate-200">
           Psychotherapy is demanding work. Therapists hold complex stories, carry the weight of trauma,
@@ -498,46 +476,70 @@
         </p>
       </section>
 
-
-
       <!-- Footer -->
-      <div class="flex flex-col items-center space-y-4 py-8 bg-midnight">
+      <footer class="flex flex-col items-center space-y-6 py-10 bg-midnight">
         <!-- Logos Row -->
-        <div class="flex items-center space-x-6">
+        <div class="flex flex-wrap justify-center items-center gap-8">
+          <!-- BACP -->
           <div class="flex items-center space-x-2">
             <span class="text-slate-300 text-sm">Registered Member of</span>
             <a
                 href="https://www.bacp.co.uk/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 class="inline-block"
             >
               <img
                   src="/images/BACP.png"
                   alt="BACP Logo"
-                  class="h-8 object-contain"
+                  width="160" height="40"
+                  loading="lazy"
+                  class="h-8 md:h-10 object-contain"
               />
             </a>
           </div>
+
+          <!-- Syzygy -->
           <div class="flex items-center space-x-2">
             <span class="text-slate-300 text-sm">Trained at</span>
             <a
                 href="https://www.syzygyinstitute.com/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 class="inline-block"
             >
               <img
-                  src="/public/images/syzergy.png"
+                  src="/images/syzergy.png"
                   alt="Syzygy Institute Logo"
-                  class="h-8 object-contain"
+                  width="160" height="40"
+                  loading="lazy"
+                  class="h-8 md:h-10 object-contain"
+              />
+            </a>
+          </div>
+
+          <!-- University of Chichester -->
+          <div class="flex items-center space-x-2">
+            <span class="text-slate-300 text-sm">Graduate of</span>
+            <a
+                href="https://www.chi.ac.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block"
+            >
+              <img
+                  src="/images/UC.png"
+                  alt="University of Chichester Logo"
+                  width="160" height="40"
+                  loading="lazy"
+                  class="h-8 md:h-10 object-contain"
               />
             </a>
           </div>
         </div>
 
         <!-- Contact + Social -->
-        <footer class="text-center text-sm text-slate-300 space-y-3">
+        <div class="text-center text-sm text-slate-300 space-y-3">
           <div>
             <a
                 href="mailto:discover@heliosynthesis.org"
@@ -550,6 +552,7 @@
             <a
                 href="https://www.linkedin.com/in/chrysalistherapyservices"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="hover:underline text-slate-200"
             >
               LinkedIn
@@ -557,112 +560,26 @@
             <a
                 href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="hover:underline text-slate-200"
             >
               Facebook
             </a>
           </div>
           <div class="text-slate-400">© 2025 Rob Ormiston. All rights reserved.</div>
-        </footer>
-      </div>
-
+        </div>
+      </footer>
     </div>
-  </div><!-- Footer -->
-  <div class="flex flex-col items-center space-y-6 py-10 bg-midnight">
-    <!-- Logos Row -->
-    <div class="flex flex-wrap justify-center items-center gap-8">
-      <!-- BACP -->
-      <div class="flex items-center space-x-2">
-        <span class="text-slate-300 text-sm">Registered Member of</span>
-        <a
-            href="https://www.bacp.co.uk/"
-            target="_blank"
-            rel="noopener"
-            class="inline-block"
-        >
-          <img
-              src="/images/BACP.png"
-              alt="BACP Logo"
-              class="h-8 md:h-10 object-contain"
-          />
-        </a>
-      </div>
-
-      <!-- Syzygy -->
-      <div class="flex items-center space-x-2">
-        <span class="text-slate-300 text-sm">Trained at</span>
-        <a
-            href="https://www.syzygyinstitute.com/"
-            target="_blank"
-            rel="noopener"
-            class="inline-block"
-        >
-          <img
-              src="/public/images/syzergy.png"
-              alt="Syzygy Institute Logo"
-              class="h-8 md:h-10 object-contain"
-          />
-        </a>
-      </div>
-
-      <!-- University of Chichester -->
-      <div class="flex items-center space-x-2">
-        <span class="text-slate-300 text-sm">Graduate of</span>
-        <a
-            href="https://www.chi.ac.uk/"
-            target="_blank"
-            rel="noopener"
-            class="inline-block"
-        >
-          <img
-              src="/images/UC.png"
-              alt="University of Chichester Logo"
-              class="h-8 md:h-10 object-contain"
-          />
-        </a>
-      </div>
-    </div>
-
-    <!-- Contact + Social -->
-    <footer class="text-center text-sm text-slate-300 space-y-3">
-      <div>
-        <a
-            href="mailto:discover@heliosynthesis.org"
-            class="hover:underline text-slate-200"
-        >
-          discover@heliosynthesis.org
-        </a>
-      </div>
-      <div class="space-x-6">
-        <a
-            href="https://www.linkedin.com/in/chrysalistherapyservices"
-            target="_blank"
-            class="hover:underline text-slate-200"
-        >
-          LinkedIn
-        </a>
-        <a
-            href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info"
-            target="_blank"
-            class="hover:underline text-slate-200"
-        >
-          Facebook
-        </a>
-      </div>
-      <div class="text-slate-400">© 2025 Rob Ormiston. All rights reserved.</div>
-    </footer>
   </div>
-
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import stressed from '../assets/stressed.jpg'
 import MandorlaDivider from '../components/MandorlaDivider.vue'
 
 const showName = ref(false)
 const isMenuOpen = ref(false)
-const windowWidth = ref(window.innerWidth)
+const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
 
 // Desktop dropdown hovers
 const aboutHover = ref(false)
@@ -673,7 +590,9 @@ const aboutOpen = ref(false)
 const resourcesOpen = ref(false)
 
 onMounted(() => {
-  setTimeout(() => { showName.value = true }, 300)
+  setTimeout(() => {
+    showName.value = true
+  }, 300)
   window.addEventListener('resize', () => {
     windowWidth.value = window.innerWidth
   })
