@@ -13,30 +13,20 @@
       <header
           class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md"
       >
-        <!-- Left: Logo + Name + Chrysalis -->
-        <div class="flex items-start flex-col">
-          <router-link to="/" class="flex items-center space-x-3 flex-shrink-0">
+        <!-- Left: Logo + Name -->
+        <div class="flex items-center flex-shrink-0 space-x-4">
+          <router-link to="/" class="flex items-center space-x-4">
             <img
                 src="/src/assets/favmine.png"
                 alt="Rob Ormiston logo"
-                class="size-16 md:size-20 lg:size-24 object-cover shrink-0"
-
-
-
-
-
+                class="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover shrink-0"
             />
-            <transition name="fade-up" appear>
-              <span
-                  v-if="showName"
-                  class="text-xl font-cormorant font-semibold whitespace-nowrap"
-              ></span>
-            </transition>
+            <span class="text-2xl md:text-3xl lg:text-4xl font-garamond font-semibold text-slate-900">
+      Rob Ormiston
+    </span>
           </router-link>
-          <div class="ml-11 text-sm text-slate-400 font-medium leading-snug">
-
-          </div>
         </div>
+
 
         <!-- Center: Desktop Navigation (grouped) -->
         <nav
@@ -109,13 +99,7 @@
           </div>
 
 
-          <!-- Book (CTA) -->
-          <a
-              href="https://calendly.com/robormiston/new-meeting"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-3 py-1.5 rounded-md font-medium bg-[#b08d57] text-midnight hover:opacity-90 transition"
-          >Book</a>
+
         </nav>
 
         <!-- Right: Hamburger (mobile only) -->
@@ -185,23 +169,32 @@
       </div>
 
       <!-- Hero -->
-      <section class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
-        <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight text-white">
+      <section role="banner" aria-label="Hero"
+               class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
+        <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight">
           Trauma-Informed Psychotherapy & Counselling
         </h1>
-        <p class="text-lg text-faded mb-8 leading-relaxed font-inter">
+
+        <p class="text-lg text-slate-300 mb-8 leading-relaxed font-inter">
           Creating a safe, clear space where healing from trauma unfolds. Here,
           complexity is met with patience and precision—helping you build
           resilience, regain balance, and move forward with confidence.
-
-          My approach is reflective and symbolic, grounded in lived experience,
-          providing clients with clarity, containment, and genuine connection.
+          <span class="block mt-3">
+      My approach is reflective and symbolic, grounded in lived experience,
+      providing clients with clarity, containment, and genuine connection.
+    </span>
         </p>
+
         <a
+            aria-label="Email Rob to get in touch"
             href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
-            class="text-periwinkle hover:underline"
-        >Get in Touch →</a>
+            class="inline-flex items-center justify-center rounded-xl bg-periwinkle px-5 py-3 font-medium text-midnight hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-periwinkle/60 transition"
+        >
+          Get in Touch →
+        </a>
       </section>
+
+
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
@@ -243,64 +236,83 @@
           Client Reflections
         </h3>
 
-        <div class="grid md:grid-cols-3 gap-6 text-slate-300">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-slate-300">
+          <!-- 1 -->
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg
-                class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-            >
-              <path
-                  d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"
-              />
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            "Rob helped me reconnect with parts of myself I’d long forgotten. The
-            work was profound ⭐ ⭐ ⭐ ⭐ ⭐."
+            "Rob helped me reconnect with parts of myself I’d long forgotten. The work was profound ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— S.R., 2024</footer>
           </blockquote>
 
+          <!-- 2 -->
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg
-                class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-            >
-              <path
-                  d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"
-              />
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            "Rob’s approach unlocked a whole new perspective. ⭐ ⭐ ⭐ ⭐ ⭐.”
+            "Rob’s approach unlocked a whole new perspective. ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— A.M., 2023</footer>
           </blockquote>
 
+          <!-- 3 -->
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <svg
-                class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-            >
-              <path
-                  d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"
-              />
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
             </svg>
-            "Rob is the best therapist I have met in 10 years. ⭐ ⭐ ⭐ ⭐ ⭐.”
+            "Rob is the best therapist I have met in 10 years. ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— J.L., 2022</footer>
+          </blockquote>
+
+          <!-- 4 -->
+          <blockquote
+              class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
+          >
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
+            </svg>
+            "I felt genuinely seen and safe to explore tough stuff. ⭐ ⭐ ⭐ ⭐ ⭐."
+            <footer class="mt-3 text-sm text-slate-400">— K.T., 2024</footer>
+          </blockquote>
+
+          <!-- 5 -->
+          <blockquote
+              class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
+          >
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
+            </svg>
+            "The blend of clarity and compassion changed my day-to-day. ⭐ ⭐ ⭐ ⭐ ⭐."
+            <footer class="mt-3 text-sm text-slate-400">— P.N., 2023</footer>
+          </blockquote>
+
+          <!-- 6 -->
+          <blockquote
+              class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
+          >
+            <svg class="w-6 h-6 text-periwinkle opacity-30 absolute -top-3 -left-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.17 6.6C6.1 7.69 5.57 9.05 5.57 10.68c0 2.32 1.01 4.01 3.03 5.08L8.6 17.3c-3.02-1.16-4.53-3.38-4.53-6.58 0-1.8.6-3.36 1.8-4.68C7.07 4.83 8.8 4 10.8 4v2.4c-1.34 0-2.47.43-3.63 1.2z"/>
+            </svg>
+            "I left every session lighter and more resourced. ⭐ ⭐ ⭐ ⭐ ⭐."
+            <footer class="mt-3 text-sm text-slate-400">— D.W., 2022</footer>
           </blockquote>
         </div>
 
-        <div class="text-center">
+        <div class="text-center mt-8">
           <a
               href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
               class="text-periwinkle hover:underline"
           >Get in Touch →</a>
         </div>
       </section>
+
+
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
@@ -412,22 +424,8 @@
           demands.
         </p>
 
-        <p class="text-lg leading-relaxed text-slate-200">
-          To help bring this vision to life, we invite your financial support and
-          partnership. Your contribution will directly power the development of
-          this vital resource—supporting therapists and the clients they serve
-          worldwide. When you click “Buy Me a Coffee,” you’ll be taken to our Buy Me
-          a Coffee page, where you can read more in depth about what we’re building
-          and how your support makes a difference.
-        </p>
-
         <div class="pt-8 flex justify-center">
-          <button
-              @click="openBuyMeACoffee"
-              class="bg-periwinkle hover:bg-indigo-600 text-midnight font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300"
-          >
-            ☕ Buy Me a Coffee
-          </button>
+
         </div>
       </section>
 
