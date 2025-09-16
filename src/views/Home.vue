@@ -176,36 +176,101 @@
       <section
           role="banner"
           aria-label="Hero"
-          class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white"
+          class="relative isolate overflow-hidden pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white"
       >
-        <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight">
-          Trauma-Informed Psychotherapy & Counselling
-        </h1>
-        <p class="text-lg text-slate-300 mb-8 leading-relaxed font-inter">
-          Creating a safe, clear space where healing from trauma unfolds. Here,
-          complexity is met with patience and precision—helping you build resilience, regain balance,
-          and move forward with confidence.
-          <span class="block mt-3">
-            My approach is reflective and symbolic, grounded in lived experience, providing clients
-            with clarity, containment, and genuine connection.
-          </span>
-        </p>
-        <div class="flex flex-col items-center gap-3">
-          <a
-              aria-label="Email Rob to get in touch"
-              href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
-              class="inline-flex items-center justify-center rounded-xl bg-periwinkle px-5 py-3 font-medium text-midnight hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-periwinkle/60 transition"
+        <!-- Cosmic background (always visible) -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+          <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 1200 600"
+              class="h-full w-full opacity-35 md:opacity-40 mix-blend-screen"
+              preserveAspectRatio="xMidYMid slice"
           >
-            Get in Touch →
-          </a>
-          <router-link
-              :to="{ hash: '#how-i-work' }"
-              class="text-periwinkle/90 hover:text-periwinkle underline-offset-4 hover:underline"
-          >
-            How I Work
-          </router-link>
+            <defs>
+              <radialGradient id="nebula" cx="70%" cy="30%" r="60%">
+                <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55"/>
+                <stop offset="40%" stop-color="#3b82f6" stop-opacity="0.28"/>
+                <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="star" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Nebula blobs -->
+            <circle cx="880" cy="120" r="360" fill="url(#nebula)"/>
+            <circle cx="320" cy="220" r="260" fill="url(#nebula)" opacity="0.4"/>
+
+            <!-- Light spiral (galaxy arm) -->
+            <path
+                d="M950,160c-80,-40 -190,-30 -270,20c-110,70 -160,190 -140,250c20,60 120,40 200,-10
+           c80,-50 140,-120 190,-180c30,-36 24,-64 20,-80z"
+                fill="none"
+                stroke="#a78bfa"
+                stroke-opacity="0.35"
+                stroke-width="2.5"
+            />
+
+            <!-- Stars -->
+            <g fill="#e5e7eb" fill-opacity="0.95">
+              <circle cx="180" cy="90" r="1.2"/>
+              <circle cx="240" cy="140" r="1.2"/>
+              <circle cx="520" cy="60" r="1.4"/>
+              <circle cx="680" cy="210" r="1.2"/>
+              <circle cx="1040" cy="80" r="1.4"/>
+              <circle cx="980" cy="190" r="1.4"/>
+              <circle cx="740" cy="320" r="1.2"/>
+              <circle cx="420" cy="260" r="1.2"/>
+              <circle cx="300" cy="330" r="1.2"/>
+              <circle cx="1060" cy="260" r="1.2"/>
+            </g>
+            <g opacity="0.55">
+              <circle cx="520" cy="60" r="12" fill="url(#star)"/>
+              <circle cx="980" cy="190" r="14" fill="url(#star)"/>
+              <circle cx="300" cy="330" r="11" fill="url(#star)"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Readability overlay -->
+        <div class="absolute inset-0 z-0 bg-gradient-to-b from-midnight/30 via-transparent to-midnight/50 pointer-events-none"></div>
+
+        <!-- Content -->
+        <div class="relative z-10">
+          <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight">
+            Trauma-Informed Psychotherapy & Counselling
+          </h1>
+          <p class="text-lg text-slate-300 mb-8 leading-relaxed font-inter">
+            Creating a safe, clear space where healing from trauma unfolds. Here,
+            complexity is met with patience and precision—helping you build resilience, regain balance,
+            and move forward with confidence.
+            <span class="block mt-3">
+        My approach is reflective and symbolic, grounded in lived experience, providing clients
+        with clarity, containment, and genuine connection.
+      </span>
+          </p>
+          <div class="flex flex-col items-center gap-3">
+            <a
+                aria-label="Email Rob to get in touch"
+                href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
+                class="inline-flex items-center justify-center rounded-xl bg-periwinkle px-5 py-3 font-medium text-midnight hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-periwinkle/60 transition"
+            >
+              Get in Touch →
+            </a>
+            <router-link
+                :to="{ hash: '#how-i-work' }"
+                class="text-periwinkle/90 hover:text-periwinkle underline-offset-4 hover:underline"
+            >
+              How I Work
+            </router-link>
+          </div>
         </div>
       </section>
+
+
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
