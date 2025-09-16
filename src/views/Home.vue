@@ -171,6 +171,7 @@
       <!-- Hero -->
       <section role="banner" aria-label="Hero"
                class="pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white">
+
         <h1 class="text-5xl font-cormorant font-semibold mb-6 tracking-tight leading-tight">
           Trauma-Informed Psychotherapy & Counselling
         </h1>
@@ -185,14 +186,25 @@
     </span>
         </p>
 
-        <a
-            aria-label="Email Rob to get in touch"
-            href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
-            class="inline-flex items-center justify-center rounded-xl bg-periwinkle px-5 py-3 font-medium text-midnight hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-periwinkle/60 transition"
-        >
-          Get in Touch →
-        </a>
+        <div class="flex flex-col items-center gap-3">
+          <a
+              aria-label="Email Rob to get in touch"
+              href="mailto:discover@heliosynthesis.org?subject=Hello%20Rob&body=Hi%20Rob,%0D%0A%0D%0AI%27d%20like%20to%20get%20in%20touch%20to%20explore%20your%20work.%20Looking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,"
+              class="inline-flex items-center justify-center rounded-xl bg-periwinkle px-5 py-3 font-medium text-midnight hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-periwinkle/60 transition"
+          >
+            Get in Touch →
+          </a>
+
+          <a
+              href="#how-i-work"
+              class="text-periwinkle/90 hover:text-periwinkle underline-offset-4 hover:underline"
+          >
+            <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
+            How I Work
+          </a>
+        </div>
       </section>
+
 
 
 
@@ -225,6 +237,43 @@
         </div>
       </section>
 
+      <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
+      <!-- How I Work -->
+      <section id="how-i-work" class="py-20 px-6 max-w-3xl mx-auto text-slate-200">
+        <h2 class="text-3xl font-display font-semibold mb-8 text-center">
+          How I Work
+        </h2>
+
+        <div class="space-y-8 text-slate-300 leading-relaxed font-inter">
+          <div>
+            <h3 class="text-xl font-semibold text-periwinkle mb-2">A Safe and Steady Space</h3>
+            <p>
+              Healing from trauma begins with safety. Our work together takes place in a clear and contained space, where your pace is respected and your experiences are met without judgment. The foundation is trust — building a relationship where you feel steady enough to explore what matters most.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-periwinkle mb-2">Working with All Parts of You</h3>
+            <p>
+              We all carry different “parts” — protective sides, vulnerable places, and hidden strengths. In therapy, we explore these gently, helping them find balance rather than conflict. This approach allows for deeper self-understanding and lasting change, without forcing or rushing the process.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-periwinkle mb-2">Making Meaning Together</h3>
+            <p>
+              Beyond coping, therapy can also be about meaning. We look at patterns, symbols, and the story your life is telling — finding clarity in complexity, and helping you connect with a deeper sense of purpose and direction.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-periwinkle mb-2">Thoughtful Use of Tools</h3>
+            <p>
+              For clients who wish, I make careful use of modern tools — including AI summaries and reflections — to help you see your progress more clearly between sessions. These are always optional, and our work remains centered on the human relationship between us.
+            </p>
+          </div>
+        </div>
+      </section>
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Client Reflections -->
@@ -429,7 +478,6 @@
         </div>
       </section>
 
-      <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Footer -->
       <div class="flex justify-center items-center mt-4 space-x-2">
