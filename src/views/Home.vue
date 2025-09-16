@@ -501,43 +501,98 @@
 
 
       <!-- Footer -->
-      <div class="flex justify-center items-center mt-4 space-x-2">
-        <span class="text-slate-500">Registered Member of</span>
-        <a
-            href="https://www.bacp.co.uk/"
-            target="_blank"
-            rel="noopener"
-            class="inline-block"
-        >
-          <img
-              src="/src/assets/BACP.png"
-              alt="BACP Logo"
-              class="h-6 md:h-8 object-contain"
-          />
-        </a>
-      </div>
+      <div class="flex flex-col items-center space-y-6 py-10 bg-midnight">
+        <!-- Logos Row -->
+        <div class="flex flex-wrap justify-center items-center gap-8">
+          <!-- BACP -->
+          <div class="flex items-center space-x-2">
+            <span class="text-slate-300 text-sm">Registered Member of</span>
+            <a
+                href="https://www.bacp.co.uk/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block"
+            >
+              <img
+                  src="/src/assets/BACP.png"
+                  alt="BACP Logo"
+                  class="h-8 md:h-10 object-contain"
+              />
+            </a>
+          </div>
 
-      <footer class="py-6 text-center text-sm text-slate-600 bg-midnight space-y-2">
-        <div>
-          <a href="mailto:discover@heliosynthesis.org" class="hover:underline">discover@heliosynthesis.org</a>
+          <!-- Syzygy -->
+          <div class="flex items-center space-x-2">
+            <span class="text-slate-300 text-sm">Trained at</span>
+            <a
+                href="https://www.syzygyinstitute.com/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block"
+            >
+              <img
+                  src="/src/assets/SYZERGY.png"
+                  alt="Syzygy Institute Logo"
+                  class="h-8 md:h-10 object-contain"
+              />
+            </a>
+          </div>
+
+          <!-- University of Chichester -->
+          <div class="flex items-center space-x-2">
+            <span class="text-slate-300 text-sm">Graduate of</span>
+            <a
+                href="https://www.chi.ac.uk/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block"
+            >
+              <img
+                  src="/src/assets/UC.png"
+                  alt="University of Chichester Logo"
+                  class="h-8 md:h-10 object-contain"
+              />
+            </a>
+          </div>
         </div>
-        <div class="space-x-4">
-          <a
-              href="https://www.linkedin.com/in/chrysalistherapyservices"
-              target="_blank"
-              class="hover:underline"
-          >LinkedIn</a>
-          <a
-              href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info"
-              target="_blank"
-              class="hover:underline"
-          >Facebook</a>
-        </div>
-        <div>© 2025 Rob Ormiston. All rights reserved.</div>
-      </footer>
-    </div>
-  </div>
+
+        <!-- Contact + Social -->
+        <footer class="text-center text-sm text-slate-300 space-y-3">
+          <div>
+            <a
+                href="mailto:discover@heliosynthesis.org"
+                class="hover:underline text-slate-200"
+            >
+              discover@heliosynthesis.org
+            </a>
+          </div>
+          <div class="space-x-6">
+            <a
+                href="https://www.linkedin.com/in/chrysalistherapyservices"
+                target="_blank"
+                class="hover:underline text-slate-200"
+            >
+              LinkedIn
+            </a>
+            <a
+                href="https://www.facebook.com/profile.php?id=61555851054901&sk=about_contact_and_basic_info"
+                target="_blank"
+                class="hover:underline text-slate-200"
+            >
+              Facebook
+            </a>
+          </div>
+          <div class="text-slate-400">© 2025 Rob Ormiston. All rights reserved.</div>
+        </footer>
+      </div> <!-- end of footer container -->
+
+    </div> <!-- closes .relative z-10 -->
+  </div> <!-- closes outer .relative font-inter -->
+
 </template>
+
+
+
 
 <script setup>
 import { ref, onMounted } from 'vue'
