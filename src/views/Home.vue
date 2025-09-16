@@ -55,10 +55,15 @@
                 class="absolute left-0 top-full w-44 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
                 role="menu"
             >
-              <a href="/#about" class="block px-3 py-2 hover:bg-white/5" role="menuitem">About Me</a>
-              <a href="/#mission" class="block px-3 py-2 hover:bg-white/5" role="menuitem">Mission</a>
+              <a href="/#about" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
+                About Me
+              </a>
+              <a href="/#vision" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
+                Vision
+              </a>
             </div>
           </div>
+
 
 
           <!-- Services (top-level) -->
@@ -199,7 +204,7 @@
               href="#how-i-work"
               class="text-periwinkle/90 hover:text-periwinkle underline-offset-4 hover:underline"
           >
-            <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
+
             How I Work
           </a>
         </div>
@@ -212,30 +217,52 @@
 
       <!-- About -->
       <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
-        <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
-          <div class="md:w-2/3 text-center md:text-left">
-            <h3 class="text-2xl font-display font-semibold mb-4">About Me</h3>
-            <p class="mb-4">
-              I’m a psychotherapist and the founder of Heliosynthesis. With well
-              over 25 years experience of working in mental health environments,
-              including clinical leadership roles within the NHS. I work at depth
-              with trauma, memory, and meaning — primarily through Internal Family
-              Systems (IFS) and EMDR.
-            </p>
-            <p>
-              My approach is reflective, symbolic, and rooted in real experience
-              — offering clients clarity, containment, and connection.
-            </p>
+        <div class="flex flex-col md:flex-row items-start gap-10">
+          <!-- Text -->
+          <div class="md:w-2/3 text-center md:text-left flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-display font-semibold mb-4">About Me</h3>
+
+              <p class="mb-4 text-slate-300">
+                I’m a psychotherapist and the founder of Heliosynthesis, with over 25 years
+                of experience in mental health, including clinical leadership roles within
+                the NHS. My work focuses on trauma, memory, and meaning — helping people
+                make sense of their experiences and reconnect with resilience.
+              </p>
+
+              <p class="text-slate-300">
+                I am IFS- and EMDR-informed. My approach is reflective and symbolic,
+                grounded in lived experience — offering clarity, containment,
+                and genuine connection.
+              </p>
+            </div>
+
+            <!-- Collapsible extras -->
+            <details class="mt-6">
+              <summary class="cursor-pointer text-periwinkle underline-offset-4 hover:underline">
+                Credentials
+              </summary>
+              <ul class="mt-2 text-sm text-slate-400 list-disc pl-5 space-y-1">
+                <li>Training: Syzygy Institute</li>
+                <li>Registered Mental Health Nurse</li>
+                <li>Member: British Association for Counselling and Psychotherapy (BACP)</li>
+                <li>Planning committees: International Humanities Conference (humanistic)</li>
+              </ul>
+            </details>
           </div>
-          <div class="md:w-1/3 mt-4">
+
+          <!-- Image -->
+          <div class="md:w-1/3 mt-4 md:self-start">
             <img
                 src="/src/assets/rob-placeholder.jpg"
                 alt="Rob Ormiston portrait"
-                class="w-40 h-40 rounded-full mx-auto md:mx-0 shadow-sm border border-slate-700 object-cover"
+                class="w-48 h-64 rounded-lg mx-auto md:mx-0 shadow-md border border-slate-700 object-cover"
             />
           </div>
         </div>
       </section>
+
+
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
       <!-- How I Work -->
@@ -423,60 +450,54 @@
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
-      <!-- Mission Section -->
-      <section id="mission" class="max-w-3xl mx-auto py-20 px-6 space-y-10">
+      <!-- Vision Section -->
+      <section id="vision" class="max-w-3xl mx-auto py-20 px-6 space-y-10">
         <img
             :src="stressed"
             alt="Therapist holding complexity"
             class="rounded-lg w-full h-48 object-cover mb-8"
         />
+
         <h1 class="text-5xl font-cormorant font-semibold text-slate-200 text-center">
-          Our Mission
+          Vision
         </h1>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          We’re building an all-in-one platform designed for psychotherapists and
-          clinicians—bringing together scheduling, billing, secure client access,
-          and AI-powered tools in one seamless, integrated space. Our mission is
-          simple: to make therapists practice easier to manage and help make the
-          work more impactful. Designed to honour clinical complexity and support
-          therapist well-being, our app fosters deeper connection, reduces
-          administrative burden, and enhances the quality of care. With built-in
-          supervision features and flexible governance by the therapist, we provide
-          a trusted container where clinical practice and innovation meet—helping
-          therapists thrive in every aspect of their work.
-          <br /><br />
-          The
+          Psychotherapy is demanding work. Therapists hold complex stories, carry the weight of trauma,
+          and offer presence where it is most needed. Our vision is to create tools that honour this
+          depth of care while making the work lighter to hold.
+        </p>
+
+        <p class="text-lg leading-relaxed text-slate-200">
+          We are building an integrated platform designed for psychotherapists and clinicians. It brings
+          together scheduling, billing, secure client access, and thoughtful use of AI — not to replace
+          the human relationship, but to reduce administrative burden and give more space for what matters
+          most: the therapy itself.
+        </p>
+
+        <p class="text-lg leading-relaxed text-slate-200">
+          With features for supervision, governance, and reflection, the platform aims to support both
+          clinical practice and therapist well-being. The
           <a
               href="https://heliosynthesis.org"
               target="_blank"
               rel="noopener noreferrer"
               class="underline text-indigo-400 hover:text-indigo-600"
-          >fun personality assessment</a>
-          you may have explored demonstrates how AI can support psychotherapists
-          in navigating complex emotional landscapes. It’s an inviting step toward
-          a broader vision of integrated, insightful care.
+          >
+            fun personality assessment
+          </a>
+          you may have tried offers a glimpse of what is possible — how AI can help illuminate patterns
+          and deepen reflection, always under the guidance of the therapist.
         </p>
 
         <p class="text-lg leading-relaxed text-slate-200">
-          In a world marked by rising trauma from global conflicts and crises,
-          accessible online trauma therapy is more vital than ever. Our platform
-          evolves alongside AI advancements to empower therapists—enhancing their
-          expertise and presence without replacing the human core of healing.
+          In a world shaped by conflict, crisis, and rising trauma, accessible and sustainable mental
+          health care is more important than ever. By combining clinical wisdom with evolving technology,
+          we hope to build a future where therapists can thrive, and clients can receive care that is
+          both compassionate and enduring.
         </p>
-
-        <p class="text-lg leading-relaxed text-slate-200">
-          Therapists carry profound complexity in their work, and AI is designed
-          to shoulder that burden alongside them. Together, we strive to build a
-          sustainable future for mental health services—one that honors the depth
-          of clinical care while easing the weight of administrative and emotional
-          demands.
-        </p>
-
-        <div class="pt-8 flex justify-center">
-
-        </div>
       </section>
+
 
 
       <!-- Footer -->
