@@ -33,7 +33,7 @@
         <!-- Center: Desktop Navigation -->
         <nav
             v-if="!isMenuOpen && windowWidth >= 768"
-            class="hidden md:flex justify-center items-center gap-5 text-sm"
+            class="hidden md:flex justify-right items-center gap-5 text-sm"
         >
           <router-link to="/" class="hover:underline">Home</router-link>
 
