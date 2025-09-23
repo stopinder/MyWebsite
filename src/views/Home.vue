@@ -247,12 +247,12 @@
             Trauma-Informed Psychotherapy & Counselling
           </h1>
           <p class="text-lg text-slate-300 mb-8 leading-relaxed font-inter">
-            Creating a safe, clear space where healing from trauma unfolds. Here,
-            complexity is met with patience and precision—helping you build resilience, regain balance,
-            and move forward with confidence.
+            A clear, steady space where trauma can be met — and healing can begin.
+            I offer evidence-informed psychotherapy that integrates Internal Family Systems, EMDR, Transactional Analysis, and person-centred practice.
+
+            I also provide clinical supervision and make careful use of AI-based tools to enhance insight — always grounded in the therapeutic relationship.
             <span class="block mt-3">
-        My approach is reflective and symbolic, grounded in lived experience, providing clients
-        with clarity, containment, and genuine connection.
+
       </span>
           </p>
           <div class="flex flex-col items-center gap-3">
