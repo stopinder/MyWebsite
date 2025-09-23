@@ -549,7 +549,7 @@
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
       <!-- Vision Section -->
-      <section id="vision" class="max-w-3xl mx-auto py-20 px-6 space-y-10">
+      <section id="vision" class="max-w-3xl mx-auto py-20 px-6 space-y-10 text-slate-200">
         <img
             src="/images/stressed.jpg"
             alt="Therapist holding complexity"
@@ -562,43 +562,45 @@
           Vision
         </h3>
 
-
-
+        <!-- Intro paragraph -->
         <p class="text-lg leading-relaxed text-slate-200">
-          Psychotherapy is demanding work. Therapists hold complex stories, carry the weight of trauma,
-          and offer presence where it is most needed. Our vision is to create tools that honour this
-          depth of care while making the work lighter to hold.
+          Our aim is to create something deeper than tools — a reflective space for clinicians that sustains meaning, reduces strain, and helps prevent burnout while maintaining the human heart of the work.
         </p>
 
-        <p class="text-lg leading-relaxed text-slate-200">
-          We are building an integrated platform designed for psychotherapists and clinicians. It brings
-          together scheduling, billing, secure client access, and thoughtful use of AI — not to replace
-          the human relationship, but to reduce administrative burden and give more space for what matters
-          most: the therapy itself.
-        </p>
+        <!-- Read More dropdown -->
+        <details class="mt-6">
+          <summary class="cursor-pointer text-periwinkle underline-offset-4 hover:underline">
+            Read More
+          </summary>
+          <div class="mt-4 space-y-4 text-slate-400 text-base leading-relaxed">
 
-        <p class="text-lg leading-relaxed text-slate-200">
-          With features for supervision, governance, and reflection, the platform aims to support both
-          clinical practice and therapist well-being. The
-          <a
-              href="https://heliosynthesis.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="underline text-indigo-400 hover:text-indigo-600"
-          >
-            fun personality assessment
-          </a>
-          you may have tried offers a glimpse of what is possible — how AI can help illuminate patterns
-          and deepen reflection, always under the guidance of the therapist.
-        </p>
 
-        <p class="text-lg leading-relaxed text-slate-200">
-          In a world shaped by conflict, crisis, and rising trauma, accessible and sustainable mental
-          health care is more important than ever. By combining clinical wisdom with evolving technology,
-          we hope to build a future where therapists can thrive, and clients can receive care that is
-          both compassionate and enduring.
-        </p>
+
+
+
+          <p>
+              Psychotherapy is demanding work. Clinicians hold deep stories, bear witness to trauma, and offer presence where it’s most needed. Our aim is to create tools that honour this emotional and symbolic labour — not by replacing the human, but by sustaining it.
+            </p>
+
+            <p>
+              This is more than scheduling and billing. It’s a reflective container: a space for insight, integration, and symbolic attunement. The platform is designed to reduce administrative strain while preserving the essence of therapeutic work.
+            </p>
+
+            <p>
+              With features for supervision, governance, and meaning-making, it supports therapists through curated, HIPAA-compliant GPTs — specially trained models that offer safe, immediate reflective mirroring. These are not generic chatbots. They are part of a larger vision of integrated practice.
+            </p>
+
+            <p>
+              Designed to interface directly with tools like Zoom, this platform enables therapist, client, and AI to work together — in real time, in alignment, and in service of depth. The result is a holding environment that enhances clarity and reduces burnout without compromising relational presence.
+            </p>
+
+            <p>
+              This is work I’ve been building toward for years — bridging the clinical with the symbolic, the human with the emerging. Not to automate, but to amplify what matters most.
+            </p>
+          </div>
+        </details>
       </section>
+
 
       <!-- Footer -->
       <footer class="flex flex-col items-center space-y-6 py-10 bg-midnight text-slate-300">
