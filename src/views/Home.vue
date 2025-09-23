@@ -10,7 +10,7 @@
 
     <!-- Main Layout -->
     <div class="relative z-10">
-      <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
+      <header class="sticky top-0 z-50 px-6 py-3 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
 
         <!-- Left: Logo + Name -->
         <div class="col-span-2 flex items-center space-x-4">
@@ -96,7 +96,7 @@
       <section
           role="banner"
           aria-label="Hero"
-          class="relative isolate overflow-hidden pt-20 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white"
+          class="relative isolate overflow-hidden pt-10 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white"
       >
         <!-- Cosmic background (always visible) -->
         <div class="absolute inset-0 z-0 pointer-events-none">
