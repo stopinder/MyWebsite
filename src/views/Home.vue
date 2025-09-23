@@ -10,41 +10,56 @@
 
     <!-- Main Layout -->
     <div class="relative z-10">
-      <header class="sticky top-0 z-50 px-6 py-3 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
+      <header class="sticky top-0 z-50 px-6 py-4 bg-midnight bg-opacity-90 shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-between w-full">
 
-        <!-- Left: Logo + Name -->
-        <div class="col-span-2 flex items-center space-x-4">
-          <router-link to="/" class="flex items-center space-x-4">
-            <img
-                src="/images/favmine.png"
-                alt="Rob Ormiston logo"
-                class="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover shrink-0"
-            />
-            <span class="text-2xl md:text-3xl lg:text-4xl font-garamond font-semibold text-white">
-        Rob Ormiston
-      </span>
-          </router-link>
-        </div>
+          <!-- Left: Logo + Name -->
+          <div class="flex items-center space-x-4">
+            <router-link to="/" class="flex items-center space-x-4">
+              <img
+                  src="/images/favmine.png"
+                  alt="Rob Ormiston logo"
+                  class="w-20 h-20 object-cover shrink-0"
+              />
+              <span class="text-xl md:text-3xl font-garamond font-semibold text-white truncate">
+          Rob Ormiston
+        </span>
+            </router-link>
+          </div>
 
-        <!-- Right: Hamburger (mobile only) -->
-        <div class="flex justify-end items-center md:hidden">
-          <button
-              @click="isMenuOpen = !isMenuOpen"
-              class="text-white"
-              aria-label="Toggle menu"
+          <!-- Center: Navigation (desktop only) -->
+          <nav
+              v-if="!isMenuOpen && windowWidth >= 768"
+              class="hidden md:flex items-center gap-6 text-sm justify-center flex-1"
           >
-            <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+            <router-link to="/" class="hover:underline">Home</router-link>
+            <router-link :to="{ hash: '#about' }" class="hover:underline">About</router-link>
+            <router-link :to="{ hash: '#services' }" class="hover:underline">Services</router-link>
+            <router-link :to="{ hash: '#enneagram' }" class="hover:underline">Enneagram</router-link>
+          </nav>
+
+          <!-- Right: Spacer (to balance layout) -->
+          <div class="hidden md:block w-[152px]">&nbsp;</div> <!-- Adjust width as needed -->
+
+          <!-- Mobile Hamburger -->
+          <div class="md:hidden">
+            <button @click="isMenuOpen = !isMenuOpen" class="text-white" aria-label="Toggle menu">
+              <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+
         </div>
       </header>
+
+
 
 
       <!-- Mobile Navigation -->
