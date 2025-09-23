@@ -521,9 +521,10 @@
             class="rounded-lg w-full h-48 object-cover mb-8"
         />
 
-        <h2 class="text-5xl font-cormorant font-semibold text-slate-200 text-center">
+        <h3 class="text-5xl font-display font-semibold text-slate-200 text-center">
           Vision
-        </h2>
+        </h3>
+
 
         <p class="text-lg leading-relaxed text-slate-200">
           Psychotherapy is demanding work. Therapists hold complex stories, carry the weight of trauma,
