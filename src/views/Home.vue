@@ -277,7 +277,7 @@
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
-      <!-- About -->
+><!-- About -->
       <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-slate-200">
         <div class="flex flex-col md:flex-row items-start gap-10">
           <!-- Text -->
@@ -294,9 +294,40 @@
 
               <p class="text-slate-300">
                 I am IFS- and EMDR-informed. My approach is reflective and symbolic,
-                grounded in lived experience — offering clarity, containment,
-                and genuine connection.
+                offering clarity, containment, and genuine connection.
               </p>
+
+              <!-- Read More Bio -->
+              <details class="mt-6">
+                <summary class="cursor-pointer text-periwinkle underline-offset-4 hover:underline">
+                  Read more about my background
+                </summary>
+                <div class="mt-4 text-slate-400 space-y-4 text-sm leading-relaxed">
+                  <p>
+                    My early clinical career was rooted in the transformation of psychiatric services in the UK.
+                    I was part of the commissioning teams for several landmark projects — including the first
+                    psychiatric intensive care unit at Hackney Hospital, a community mental health hospital in
+                    East Sussex, and the mental health unit at St Bartholomew’s Hospital in London under
+                    Professor Silverstone. There, I contributed to the pioneering Project 2000 Nursing Curriculum,
+                    integrating counselling and psychological models into traditionally custodial environments.
+                  </p>
+
+                  <p>
+                    In parallel to clinical work, I served on the planning committee for the
+                    <em>International Humanities Conference</em>, engaging with humanists, educators, and
+                    interdisciplinary thinkers.
+                  </p>
+
+                  <p>
+                    During the pandemic, I began bridging psychotherapy and technology — becoming a prompt
+                    engineer and full-stack developer. I now build AI-powered therapeutic tools, develop
+                    container-based applications for clinicians, and contribute to the evolving dialogue
+                    around human-AI integration in mental health. My focus remains on supporting reflective,
+                    trauma-informed care while reducing the administrative burden on practitioners.
+                  </p>
+                </div>
+              </details>
+
             </div>
 
             <!-- Collapsible extras -->
@@ -313,21 +344,19 @@
             </details>
           </div>
 
-          <!-- Image wrapper with enforced full width + flex centering -->
-          <div class="w-full md:w-1/3 mt-4 flex justify-center md:justify-start">
+          <!-- Image -->
+          <div class="md:w-1/3 mt-4 md:self-start">
             <img
                 src="/images/rob-placeholder.jpg"
                 alt="Rob Ormiston portrait"
-                width="192"
-                height="256"
+                width="192" height="256"
                 loading="lazy"
-                class="w-48 h-64 rounded-lg shadow-md border border-slate-700 object-cover"
+                class="w-48 h-64 rounded-lg mx-auto md:mx-0 shadow-md border border-slate-700 object-cover"
             />
           </div>
-
-
         </div>
       </section>
+
 
       <MandorlaDivider class="text-periwinkle/90 my-8" />
 
@@ -385,7 +414,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "Rob helped me reconnect with parts of myself I’d long forgotten. The work was profound ⭐ ⭐ ⭐ ⭐ ⭐."
+            "Robert helped through some of the most challenging times in life, helped me with my anxiety and got me to a stage of post traumatic growth. I am starting to love myself and life again ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— S.R., 2024</footer>
           </blockquote>
 
@@ -393,7 +422,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "Rob’s approach unlocked a whole new perspective. ⭐ ⭐ ⭐ ⭐ ⭐."
+            "Rob’s approach unlocked a whole new perspective ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— A.M., 2023</footer>
           </blockquote>
 
@@ -401,7 +430,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "Rob is the best therapist I have met in 10 years. ⭐ ⭐ ⭐ ⭐ ⭐."
+            "Rob is the best therapist I have met in 10 years ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— J.L., 2022</footer>
           </blockquote>
 
@@ -409,7 +438,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "I felt genuinely seen and safe to explore tough stuff. ⭐ ⭐ ⭐ ⭐ ⭐."
+            "Robert is a considerate and professional guide for the journey I’m on & I appreciate his help and support ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— K.T., 2024</footer>
           </blockquote>
 
@@ -417,7 +446,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "The blend of clarity and compassion changed my day-to-day. ⭐ ⭐ ⭐ ⭐ ⭐."
+            "I’m extremely happy with Robert as my therapist, this is the first time I’ve felt someone understands what need and what I have been through and why I react the way I do, I’m so glad I found him and I’m very confident he will be able to help me ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— P.N., 2023</footer>
           </blockquote>
 
@@ -425,7 +454,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "I left every session lighter and more resourced. ⭐ ⭐ ⭐ ⭐ ⭐."
+            "Robert is a wonderful therapist and shows that he really cares and really does listen to what you have to say. He's always on time and always keeps you in the loop if for some reason he can't make it. He's helped me a lot through my traumas and beliefs about myself and really helped my confidence ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— D.W., 2022</footer>
           </blockquote>
         </div>
