@@ -27,3 +27,18 @@ a:hover {
 }
 
 /* ... and so on */
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.02);
+  }
+}
+
+.animate-glow {
+  animation: glow 18s ease-in-out infinite;
+  transform-origin: center;
+}

@@ -175,62 +175,68 @@
           aria-label="Hero"
           class="relative isolate overflow-hidden pt-10 pb-12 px-6 text-center max-w-2xl mx-auto bg-midnight text-white"
       >
-        <!-- Cosmic background (always visible) -->
-        <div class="absolute inset-0 z-0 pointer-events-none">
+        <!-- Cosmic background (visible on md and up only) -->
+        <div class="absolute inset-0 z-0 pointer-events-none hidden md:block">
           <svg
               aria-hidden="true"
               focusable="false"
               role="presentation"
               viewBox="0 0 1200 600"
-              class="h-full w-full opacity-35 md:opacity-40 mix-blend-screen"
+              class="h-full w-full opacity-50 mix-blend-screen animate-glow"
               preserveAspectRatio="xMidYMid slice"
           >
             <defs>
-              <radialGradient id="nebula" cx="70%" cy="30%" r="60%">
-                <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55"/>
-                <stop offset="40%" stop-color="#3b82f6" stop-opacity="0.28"/>
-                <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+              <!-- Enhanced Nebula -->
+              <radialGradient id="nebula" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.6" />
+                <stop offset="40%" stop-color="#7c3aed" stop-opacity="0.3" />
+                <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0" />
               </radialGradient>
+
+              <!-- Star pulse -->
               <radialGradient id="star" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
-                <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
               </radialGradient>
             </defs>
 
-            <!-- Nebula blobs -->
-            <circle cx="880" cy="120" r="360" fill="url(#nebula)"/>
-            <circle cx="320" cy="220" r="260" fill="url(#nebula)" opacity="0.4"/>
+            <!-- Nebula circles -->
+            <circle cx="880" cy="120" r="360" fill="url(#nebula)" />
+            <circle cx="320" cy="220" r="260" fill="url(#nebula)" opacity="0.5" />
 
-            <!-- Light spiral (galaxy arm) -->
+            <!-- Faint galaxy arm -->
             <path
                 d="M950,160c-80,-40 -190,-30 -270,20c-110,70 -160,190 -140,250c20,60 120,40 200,-10
-           c80,-50 140,-120 190,-180c30,-36 24,-64 20,-80z"
+         c80,-50 140,-120 190,-180c30,-36 24,-64 20,-80z"
                 fill="none"
                 stroke="#a78bfa"
-                stroke-opacity="0.35"
-                stroke-width="2.5"
+                stroke-opacity="0.3"
+                stroke-width="2"
             />
 
             <!-- Stars -->
-            <g fill="#e5e7eb" fill-opacity="0.95">
-              <circle cx="180" cy="90" r="1.2"/>
-              <circle cx="240" cy="140" r="1.2"/>
-              <circle cx="520" cy="60" r="1.4"/>
-              <circle cx="680" cy="210" r="1.2"/>
-              <circle cx="1040" cy="80" r="1.4"/>
-              <circle cx="980" cy="190" r="1.4"/>
-              <circle cx="740" cy="320" r="1.2"/>
-              <circle cx="420" cy="260" r="1.2"/>
-              <circle cx="300" cy="330" r="1.2"/>
-              <circle cx="1060" cy="260" r="1.2"/>
+            <g fill="#e5e7eb" fill-opacity="0.9">
+              <circle cx="180" cy="90" r="1.2" />
+              <circle cx="240" cy="140" r="1.2" />
+              <circle cx="520" cy="60" r="1.4" />
+              <circle cx="680" cy="210" r="1.2" />
+              <circle cx="1040" cy="80" r="1.4" />
+              <circle cx="980" cy="190" r="1.4" />
+              <circle cx="740" cy="320" r="1.2" />
+              <circle cx="420" cy="260" r="1.2" />
+              <circle cx="300" cy="330" r="1.2" />
+              <circle cx="1060" cy="260" r="1.2" />
             </g>
+
+            <!-- Glowing stars -->
             <g opacity="0.55">
-              <circle cx="520" cy="60" r="12" fill="url(#star)"/>
-              <circle cx="980" cy="190" r="14" fill="url(#star)"/>
-              <circle cx="300" cy="330" r="11" fill="url(#star)"/>
+              <circle cx="520" cy="60" r="12" fill="url(#star)" />
+              <circle cx="980" cy="190" r="14" fill="url(#star)" />
+              <circle cx="300" cy="330" r="11" fill="url(#star)" />
             </g>
           </svg>
         </div>
+
 
         <!-- Readability overlay -->
         <div class="absolute inset-0 z-0 bg-gradient-to-b from-midnight/30 via-transparent to-midnight/50 pointer-events-none"></div>
