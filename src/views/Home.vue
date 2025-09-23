@@ -485,78 +485,61 @@
       </section>
 
       <!-- Footer -->
-      <footer class="flex flex-col items-center space-y-6 py-10 bg-midnight">
+      <footer class="flex flex-col items-center space-y-6 py-10 bg-midnight text-slate-300">
         <!-- Logos Row -->
-        <div class="flex flex-wrap justify-center items-center gap-8">
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-8 text-center sm:text-left">
           <!-- BACP -->
-          <div class="flex items-center space-x-2">
-            <span class="text-slate-300 text-sm">Registered Member of</span>
-            <a
-                href="https://www.bacp.co.uk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-block"
-            >
+          <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-2">
+            <span class="text-sm">Registered Member of</span>
+            <a href="https://www.bacp.co.uk/" target="_blank" rel="noopener noreferrer" class="inline-block">
               <img
                   src="/images/BACP.png"
                   alt="BACP Logo"
-                  width="160" height="40"
+                  class="h-8 sm:h-10 mx-auto sm:mx-0 object-contain"
                   loading="lazy"
-                  class="h-8 md:h-10 object-contain"
               />
             </a>
           </div>
 
           <!-- Syzygy -->
-          <div class="flex items-center space-x-2">
-            <span class="text-slate-300 text-sm">Trained at</span>
-            <a
-                href="https://www.syzygyinstitute.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-block"
-            >
+          <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-2">
+            <span class="text-sm">Trained at</span>
+            <a href="https://www.syzygyinstitute.com/" target="_blank" rel="noopener noreferrer" class="inline-block">
               <img
                   src="/images/syzergy.png"
                   alt="Syzygy Institute Logo"
-                  width="160" height="40"
+                  class="h-8 sm:h-10 mx-auto sm:mx-0 object-contain"
                   loading="lazy"
-                  class="h-8 md:h-10 object-contain"
               />
             </a>
           </div>
 
           <!-- University of Chichester -->
-          <div class="flex items-center space-x-2">
-            <span class="text-slate-300 text-sm">Graduate of</span>
-            <a
-                href="https://www.chi.ac.uk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-block"
-            >
+          <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-2">
+            <span class="text-sm">Graduate of</span>
+            <a href="https://www.chi.ac.uk/" target="_blank" rel="noopener noreferrer" class="inline-block">
               <img
                   src="/images/UC.png"
                   alt="University of Chichester Logo"
-                  width="160" height="40"
+                  class="h-8 sm:h-10 mx-auto sm:mx-0 object-contain"
                   loading="lazy"
-                  class="h-8 md:h-10 object-contain"
               />
             </a>
           </div>
         </div>
 
+        <!-- Divider -->
+        <hr class="w-full border-t border-slate-700/40 my-6" />
+
         <!-- Contact + Social -->
-        <div class="text-center text-sm text-slate-300 space-y-3">
+        <div class="text-center text-sm space-y-3">
           <div>
-            <a
-                href="mailto:discover@heliosynthesis.org"
-                class="hover:underline text-slate-200"
-            >
+            <a href="mailto:discover@heliosynthesis.org" class="hover:underline text-slate-200">
               discover@heliosynthesis.org
             </a>
           </div>
-          <div class="space-x-6">
+
+          <div class="flex justify-center gap-6">
             <a
                 href="https://www.linkedin.com/in/chrysalistherapyservices"
                 target="_blank"
@@ -574,9 +557,11 @@
               Facebook
             </a>
           </div>
+
           <div class="text-slate-400">© 2025 Rob Ormiston. All rights reserved.</div>
         </div>
       </footer>
+
     </div>
   </div>
 </template>
