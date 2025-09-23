@@ -345,15 +345,17 @@
           </div>
 
           <!-- Image -->
-          <div class="md:w-1/3 mt-4 md:self-start">
+          <div class="w-full md:w-1/3 mt-4 flex justify-center md:justify-start">
             <img
                 src="/images/rob-placeholder.jpg"
                 alt="Rob Ormiston portrait"
                 width="192" height="256"
                 loading="lazy"
-                class="w-48 h-64 rounded-lg mx-auto md:mx-0 shadow-md border border-slate-700 object-cover"
+                class="w-48 h-64 rounded-lg shadow-md border border-slate-700 object-cover"
             />
           </div>
+
+
         </div>
       </section>
 
