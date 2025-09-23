@@ -101,8 +101,9 @@
         </nav>
 
         <!-- Right: Hamburger (mobile only) -->
-        <div class="flex justify-end md:hidden">
-          <button @click="isMenuOpen = !isMenuOpen" class="text-white" aria-label="Toggle menu">
+        <div class="flex justify-end md:hidden pr-6">
+
+        <button @click="isMenuOpen = !isMenuOpen" class="text-white" aria-label="Toggle menu">
             <svg
                 class="w-6 h-6"
                 fill="none"
