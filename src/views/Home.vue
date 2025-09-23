@@ -33,10 +33,60 @@
               class="hidden md:flex items-center gap-6 text-sm justify-center flex-1"
           >
             <router-link to="/" class="hover:underline">Home</router-link>
-            <router-link :to="{ hash: '#about' }" class="hover:underline">About</router-link>
+
+            <!-- About Dropdown -->
+            <div class="relative" @mouseenter="aboutHover = true" @mouseleave="aboutHover = false">
+              <button
+                  class="inline-flex items-center gap-1 hover:underline"
+                  :aria-expanded="aboutHover ? 'true' : 'false'"
+                  aria-haspopup="menu"
+              >
+                About <span class="text-slate-400">▾</span>
+              </button>
+              <div
+                  v-show="aboutHover"
+                  class="absolute left-0 top-full w-44 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
+                  role="menu"
+              >
+                <router-link :to="{ hash: '#about' }" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
+                  About Me
+                </router-link>
+                <router-link :to="{ hash: '#vision' }" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
+                  Vision
+                </router-link>
+              </div>
+            </div>
+
             <router-link :to="{ hash: '#services' }" class="hover:underline">Services</router-link>
             <router-link :to="{ hash: '#enneagram' }" class="hover:underline">Enneagram</router-link>
+
+            <!-- Resources Dropdown -->
+            <div class="relative" @mouseenter="resourcesHover = true" @mouseleave="resourcesHover = false">
+              <button
+                  class="inline-flex items-center gap-1 hover:underline"
+                  :aria-expanded="resourcesHover ? 'true' : 'false'"
+                  aria-haspopup="menu"
+              >
+                Resources <span class="text-slate-400">▾</span>
+              </button>
+              <div
+                  v-show="resourcesHover"
+                  class="absolute left-0 top-full w-56 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
+                  role="menu"
+              >
+                <a
+                    href="https://blog.robormiston.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block px-3 py-2 hover:bg-white/5"
+                    role="menuitem"
+                >
+                  Blog <span class="ml-1 text-slate-400">↗</span>
+                </a>
+              </div>
+            </div>
           </nav>
+
 
           <!-- Right: Spacer (to balance layout) -->
           <div class="hidden md:block w-[152px]">&nbsp;</div> <!-- Adjust width as needed -->
@@ -65,8 +115,15 @@
       <!-- Mobile Navigation -->
       <div
           v-if="isMenuOpen"
-          class="fixed inset-0 z-50 md:hidden px-6 py-6 bg-midnight text-white space-y-4 overflow-y-auto"
+          class="fixed top-0 left-0 w-full z-50 px-6 py-4 bg-midnight text-white space-y-2 md:hidden shadow-lg overflow-y-auto max-h-screen"
       >
+        <!-- Close button -->
+        <div class="flex justify-end">
+          <button @click="closeMenu" aria-label="Close menu" class="text-white text-2xl focus:outline-none">
+            &times;
+          </button>
+        </div>
+
         <router-link to="/" class="block hover:underline" @click="closeMenu()">Home</router-link>
 
         <!-- About collapsible -->
@@ -79,12 +136,12 @@
           <span class="text-slate-400">{{ aboutOpen ? '▴' : '▾' }}</span>
         </button>
         <div v-show="aboutOpen" class="pl-3 space-y-1">
-          <a href="#about" class="block hover:underline" @click.prevent="navigateTo('#about')">About Me</a>
-          <a href="#vision" class="block hover:underline" @click.prevent="navigateTo('#vision')">Vision</a>
+          <router-link :to="{ hash: '#about' }" class="block hover:underline" @click="closeMenu()">About Me</router-link>
+          <router-link :to="{ hash: '#vision' }" class="block hover:underline" @click="closeMenu()">Vision</router-link>
         </div>
 
-        <a href="#services" class="block hover:underline" @click.prevent="navigateTo('#services')">Services</a>
-        <a href="#enneagram" class="block hover:underline" @click.prevent="navigateTo('#enneagram')">Enneagram</a>
+        <router-link :to="{ hash: '#services' }" class="block hover:underline" @click="closeMenu()">Services</router-link>
+        <router-link :to="{ hash: '#enneagram' }" class="block hover:underline" @click="closeMenu()">Enneagram</router-link>
 
         <!-- Resources collapsible -->
         <button
@@ -102,9 +159,14 @@
               rel="noopener noreferrer"
               class="block hover:underline"
               @click="closeMenu()"
-          >Blog <span class="ml-1 text-slate-400">↗</span></a>
+          >
+            Blog <span class="ml-1 text-slate-400">↗</span>
+          </a>
         </div>
       </div>
+
+
+
 
 
       <!-- Hero -->
