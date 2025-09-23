@@ -448,7 +448,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "I’m extremely happy with Robert as my therapist, this is the first time I’ve felt someone understands what need and what I have been through and why I react the way I do, I’m so glad I found him and I’m very confident he will be able to help me ⭐ ⭐ ⭐ ⭐ ⭐."
+            "I’m extremely happy with Robert as my therapist, this is the first time I’ve felt someone understands what need and what I have been through and why I react the way I do, I’m so glad I found him ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— P.N., 2023</footer>
           </blockquote>
 
@@ -456,7 +456,7 @@
           <blockquote
               class="relative border-l-4 border-periwinkle/60 pl-4 italic bg-midnight/40 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            "Robert is a wonderful therapist and shows that he really cares and really does listen to what you have to say. He's always on time and always keeps you in the loop if for some reason he can't make it. He's helped me a lot through my traumas and beliefs about myself and really helped my confidence ⭐ ⭐ ⭐ ⭐ ⭐."
+            "Robert is a wonderful therapist and shows that he really cares and really does listen to what you have to say. He's helped me a lot through my traumas and beliefs about myself and really helped my confidence ⭐ ⭐ ⭐ ⭐ ⭐."
             <footer class="mt-3 text-sm text-slate-400">— D.W., 2022</footer>
           </blockquote>
         </div>
