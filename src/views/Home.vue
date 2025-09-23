@@ -131,7 +131,8 @@
         </button>
         <div v-show="aboutOpen" class="pl-3 space-y-1">
           <router-link :to="{ hash: '#about' }" class="block hover:underline" @click="closeMenu()">About Me</router-link>
-          <router-link :to="{ hash: '#mission' }" class="block hover:underline" @click="closeMenu()">Mission</router-link>
+          <router-link :to="{ hash: '#vision' }" class="block hover:underline" @click="closeMenu()">Vision</router-link>
+
         </div>
 
         <router-link :to="{ hash: '#services' }" class="block hover:underline" @click="closeMenu()">Services</router-link>
@@ -154,22 +155,10 @@
               class="block hover:underline"
               @click="closeMenu()"
           >Blog <span class="ml-1 text-slate-400">↗</span></a>
-          <a
-              href="https://blog.robormiston.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block hover:underline"
-              @click="closeMenu()"
-          >Symbolic Insight <span class="ml-1 text-slate-400">↗</span></a>
+
         </div>
 
-        <a
-            href="https://calendly.com/robormiston/new-meeting"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block mt-2 text-center px-3 py-2 rounded-md font-medium bg-[#b08d57] text-midnight"
-            @click="closeMenu()"
-        >Book</a>
+
       </div>
 
       <!-- Hero -->
@@ -487,6 +476,25 @@
           integration. This is part of the symbolic synthesis you’ll experience in
           your personality report.
         </p>
+        <details class="mt-6 text-slate-300">
+          <summary class="cursor-pointer text-periwinkle underline-offset-4 hover:underline text-base">
+            Read More: Enneagram in Therapy
+          </summary>
+          <div class="mt-4 space-y-4 text-slate-400 text-base leading-relaxed">
+            <p>
+              The Enneagram describes not just who we are, but how we’ve adapted. Each type reflects a core motivational pattern — a lens through which we protect ourselves, pursue belonging, and organise meaning.
+            </p>
+
+            <p>
+              In therapy, it becomes a subtle map — not of surface traits, but of *inner architecture*. It helps us notice which parts of us take the lead, what exiles may be hidden beneath them, and how we behave when we're stressed or safe. It works especially well alongside Internal Family Systems (IFS), offering a way to locate the system-level manager part and explore the stories it holds.
+            </p>
+
+            <p>
+              Your type isn’t the whole story. It’s the lead instrument in a much larger orchestra. Our work together invites all the players to the stage — so you can hear the full music of your inner life.
+            </p>
+          </div>
+        </details>
+
       </section>
 
       <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
