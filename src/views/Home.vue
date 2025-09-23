@@ -521,9 +521,10 @@
             class="rounded-lg w-full h-48 object-cover mb-8"
         />
 
-        <h3 class="text-5xl font-display font-semibold text-slate-200 text-center">
+        <h3 class="text-2xl font-display font-semibold mb-6 text-center">
           Vision
         </h3>
+
 
 
         <p class="text-lg leading-relaxed text-slate-200">
