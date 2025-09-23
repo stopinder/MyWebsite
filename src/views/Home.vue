@@ -117,7 +117,10 @@
       </header>
 
       <!-- Mobile Navigation -->
-      <div v-if="isMenuOpen" class="md:hidden px-6 py-4 bg-midnight text-white space-y-2">
+      <div
+          v-if="isMenuOpen"
+          class="fixed inset-0 z-50 md:hidden px-6 py-6 bg-midnight text-white space-y-4 overflow-y-auto"
+      >
         <router-link to="/" class="block hover:underline" @click="closeMenu()">Home</router-link>
 
         <!-- About collapsible -->
@@ -130,13 +133,12 @@
           <span class="text-slate-400">{{ aboutOpen ? '▴' : '▾' }}</span>
         </button>
         <div v-show="aboutOpen" class="pl-3 space-y-1">
-          <router-link :to="{ hash: '#about' }" class="block hover:underline" @click="closeMenu()">About Me</router-link>
-          <router-link :to="{ hash: '#vision' }" class="block hover:underline" @click="closeMenu()">Vision</router-link>
-
+          <a href="#about" class="block hover:underline" @click.prevent="navigateTo('#about')">About Me</a>
+          <a href="#vision" class="block hover:underline" @click.prevent="navigateTo('#vision')">Vision</a>
         </div>
 
-        <router-link :to="{ hash: '#services' }" class="block hover:underline" @click="closeMenu()">Services</router-link>
-        <router-link :to="{ hash: '#enneagram' }" class="block hover:underline" @click="closeMenu()">Enneagram</router-link>
+        <a href="#services" class="block hover:underline" @click.prevent="navigateTo('#services')">Services</a>
+        <a href="#enneagram" class="block hover:underline" @click.prevent="navigateTo('#enneagram')">Enneagram</a>
 
         <!-- Resources collapsible -->
         <button
@@ -155,11 +157,9 @@
               class="block hover:underline"
               @click="closeMenu()"
           >Blog <span class="ml-1 text-slate-400">↗</span></a>
-
         </div>
-
-
       </div>
+
 
       <!-- Hero -->
       <section
@@ -315,7 +315,8 @@
         </div>
       </section>
 
-      <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
+      <MandorlaDivider class="text-periwinkle/90 my-8" />
+
 
       <!-- How I Work -->
       <section id="how-i-work" class="py-20 px-6 max-w-3xl mx-auto text-slate-200">
@@ -683,4 +684,17 @@ function closeMenu() {
   aboutOpen.value = false
   resourcesOpen.value = false
 }
+
+function navigateTo(hash) {
+  closeMenu()
+  setTimeout(() => {
+    const target = document.querySelector(hash)
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      window.location.hash = hash
+    }
+  }, 200)
+}
 </script>
+
