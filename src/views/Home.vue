@@ -10,98 +10,24 @@
 
     <!-- Main Layout -->
     <div class="relative z-10">
-      <header
-          class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md"
-      >
+      <header class="sticky top-0 z-50 px-6 py-4 grid grid-cols-3 items-center bg-midnight bg-opacity-90 shadow-md">
+
         <!-- Left: Logo + Name -->
-        <div class="flex items-center flex-shrink-0 space-x-4">
+        <div class="col-span-2 flex items-center space-x-4">
           <router-link to="/" class="flex items-center space-x-4">
             <img
                 src="/images/favmine.png"
                 alt="Rob Ormiston logo"
-                width="160" height="160"
                 class="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover shrink-0"
             />
-            <span
-                class="text-2xl md:text-3xl lg:text-4xl font-garamond font-semibold text-white"
-            >
-              Rob Ormiston
-            </span>
+            <span class="text-2xl md:text-3xl lg:text-4xl font-garamond font-semibold text-white">
+        Rob Ormiston
+      </span>
           </router-link>
         </div>
 
-        <!-- Center: Desktop Navigation -->
-        <nav
-            v-if="!isMenuOpen && windowWidth >= 768"
-            class="hidden md:flex justify-right items-center gap-5 text-sm"
-        >
-          <router-link to="/" class="hover:underline">Home</router-link>
-
-          <!-- About (dropdown) -->
-          <div
-              class="relative"
-              @mouseenter="aboutHover = true"
-              @mouseleave="aboutHover = false"
-          >
-            <button
-                class="inline-flex items-center gap-1 hover:underline"
-                :aria-expanded="aboutHover ? 'true' : 'false'"
-                aria-haspopup="menu"
-            >
-              About
-              <span class="text-slate-400">▾</span>
-            </button>
-            <div
-                v-show="aboutHover"
-                class="absolute left-0 top-full w-44 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
-                role="menu"
-            >
-              <router-link :to="{ hash: '#about' }" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
-                About Me
-              </router-link>
-              <router-link :to="{ hash: '#vision' }" class="block px-3 py-2 hover:bg-white/5" role="menuitem">
-                Vision
-              </router-link>
-            </div>
-          </div>
-
-          <router-link :to="{ hash: '#services' }" class="hover:underline">Services</router-link>
-          <router-link :to="{ hash: '#enneagram' }" class="hover:underline">Enneagram</router-link>
-
-          <!-- Resources (dropdown) -->
-          <div
-              class="relative"
-              @mouseenter="resourcesHover = true"
-              @mouseleave="resourcesHover = false"
-          >
-            <button
-                class="inline-flex items-center gap-1 hover:underline"
-                :aria-expanded="resourcesHover ? 'true' : 'false'"
-                aria-haspopup="menu"
-            >
-              Resources
-              <span class="text-slate-400">▾</span>
-            </button>
-            <div
-                v-show="resourcesHover"
-                class="absolute left-0 top-full w-56 rounded-lg bg-[#0f1a2c] border border-slate-700 shadow-lg py-2"
-                role="menu"
-            >
-              <a
-                  href="https://blog.robormiston.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="block px-3 py-2 hover:bg-white/5"
-                  role="menuitem"
-              >
-                Blog <span class="ml-1 text-slate-400">↗</span>
-              </a>
-            </div>
-          </div>
-        </nav>
-
         <!-- Right: Hamburger (mobile only) -->
-        <div class="flex justify-end md:hidden pr-0">
+        <div class="flex justify-end items-center md:hidden">
           <button
               @click="isMenuOpen = !isMenuOpen"
               class="text-white"
@@ -118,8 +44,8 @@
             </svg>
           </button>
         </div>
-
       </header>
+
 
       <!-- Mobile Navigation -->
       <div
