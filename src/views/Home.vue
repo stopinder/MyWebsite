@@ -600,6 +600,7 @@
           </div>
         </details>
       </section>
+      <MandorlaDivider class="text-periwinkle opacity-60 my-8" />
 
 
       <!-- Footer -->
